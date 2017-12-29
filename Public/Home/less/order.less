@@ -1,0 +1,526 @@
+//颜色
+@color1: #F5F5F5; //顶部背景灰色
+@color2: #E6E6E6; //顶部下边框深灰色
+@color3: #666666; //字体深灰色
+@color4: #3366CC; //蓝色字体
+@color5: #CC0000; //hover效果朱红色
+@color6: #FF335A; //订单数量红色
+@color7: #333; //字体黑色
+@color8: #2D2D2D; //左侧菜单栏背景色
+@color9: #3D3D3D; //左侧菜单栏边框色
+@color10: #ababab;//网络字体颜色
+
+//字体大小
+@Size1: 12px;
+@Size2: 14px;
+@Size3: 16px;
+@Size4: 18px;
+@Size5: 20px;
+@Size9: 25px;
+@Size10: 30x;
+
+*{ margin: 0;padding: 0; }
+
+a{text-decoration: none;}
+a:hover{
+    color: @color5;
+    text-decoration: underline;
+}
+
+li{list-style: none;}
+input{outline: none;}
+
+//head区域开始
+#headBox{
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    #leftHeadBox{
+        width: 377px;
+        height: 40px;
+        margin-top: 30px;
+        float: left;
+        a{
+            display: block;
+            float: left;
+            height: 40px;
+        }
+    }
+    #rightHeadBox{
+        display: block;
+        margin-top: 30px;
+        float: right;
+        margin-right: 0px;
+        li{
+            display: block;
+            width: 90px;
+            height: 36px;
+            float: left;
+            text-align: center;
+            line-height: 36px;
+            font-size: @Size2;
+            padding: 0 14px 0 0;
+            background: url("../images/step-bg.png") no-repeat 90px -74px;
+            background-color: #e6e6e6;
+        }
+        .s5{background: #e6e6e6;}
+        .s1{
+            background: url("../images/step-bg.png") no-repeat 90px 0px;
+            background-color: #FFCCCC; 
+            color: black;
+        }
+        .s2{
+            background: url("../images/step-bg.png") no-repeat 90px -37px;
+            background-color: #E02D2D; 
+            color: white;
+        }
+    }
+}
+//head区域结束
+
+//详情区开始
+#wrapper{
+    width: 960px;
+//  height: 300px;
+    margin: 20px auto;
+    margin-bottom: -1px; 
+    overflow: hidden;
+    //个人信息
+    .perInfor{
+        width: 958px;
+//      height: 116px;
+        margin: 0 auto;        
+        border: 1px solid @color2;
+        overflow: hidden;
+        table{
+            width: 100%;
+            border: none;
+            border-collapse: collapse;
+            border-spacing: none;
+            overflow: hidden;
+            tr{ 
+                border: none;
+                td{border: none;}
+                .cell_1{
+                    text-align: center;
+                    font-size: @Size3;
+                    border-right: 1px solid @color2;
+                }
+                .cell_2{
+                    padding: 10px;                   
+                    ul{
+                        li{
+                            font-size: @Size2;
+                            position: relative;
+                            margin: 0 0 2px;
+                            padding: 6px 88px 6px 10px;
+                            color: #666;
+                            background: #FCFCFC;
+                            overflow: hidden;
+                            label{
+                                margin: 0 10px 0 0;
+                            }
+                            .operate{
+                                position: absolute;
+                                top: 6px;
+                                right: 10px;
+                                display: none;
+                                a{padding: 0 0 0 20px;}
+                            }
+                            .infor-editor{
+                                display: block;
+                                height: 0;
+                                padding: 0px 0 0px 22px;
+                                overflow: hidden;
+                                dl{
+//                                  position: relative;
+                                    overflow: hidden;
+                                    padding: 0 0 10px 75px;
+                                    dt{
+                                        display: block;
+                                        float: left;
+                                        margin-left: -75px;
+                                        margin-top: -4px;
+                                        width: 82px;
+                                        text-align: right;
+                                        font-size: @Size2;
+                                        line-height: 26px;
+                                        color: #666;
+                                        .xh{  
+                                            display: block;
+                                            float: left;                              
+                                            margin: 0 8px 0px 0;
+                                            line-height: 26px;
+                                            font-family: "Simsun";
+                                            color: @color5;
+                                        }
+                                    }
+                                    //固定电话
+                                    .cuTell{
+                                        display: block;
+                                        margin-left: 15px;
+                                        e{
+                                            line-height:22px; 
+                                            font-size: 12px;
+                                        }
+                                    }
+                                    dd{  
+                                        display: block;
+                                        float: left;                                      
+                                        margin: 0 10px;
+                                        padding: 0;
+                                        input{
+                                            display: block;
+                                            float: left;
+                                            margin: 0 10px 0 0;
+                                            padding: 2px 5px;
+                                            width: 130px;
+                                            height: 20px;
+                                            border: 1px solid #d6d6d6;
+                                            font-size: @Size2;
+                                            color: @color3;
+                                        }
+                                        .addinput{width: 400px;} //详细地址输入框长度
+                                    }
+                                    //固定电话输入框
+                                    .cuTellInput{
+                                    }
+                                    //选择省份，地区
+                                    .clearfix{
+                                        display: block;
+                                        height: 26px;
+                                        float: left; 
+                                        overflow: hidden;
+                                        select{
+                                            display: block;
+                                            width: 87px;
+                                            height: 26px;
+                                            margin: 0px 10px 0 0;
+                                            border: 1px solid #d6d6d6;
+                                            vertical-align: middle;
+                                            font-size: 100%;
+                                            float: left; 
+                                            overflow: hidden;
+                                        }
+                                    }
+                                }
+                                //确认收货
+                                .w120-btn{
+                                    display: block;
+                                    width: 120px;
+                                    height: 30px;
+                                    text-align: center;
+                                    margin-top: 15px;
+                                    border: 0 none;
+                                    border-radius: 3px;
+                                    cursor: pointer;
+                                    font-size: @Size3;
+                                    color: #fff;
+                                    background: @color5;
+                                    &:hover{opacity: 0.8;}
+                                }
+                            }
+                            &:hover .operate{display: block;}
+                        }
+                        
+                    }
+                    //添加新地址
+                    .addAddress{
+                        .operateAdd{
+                            a{display: none;}
+                        }
+                        label{font-size: @Size2;}
+                    }
+                }
+            }
+            
+        }
+    }
+    //商品订单
+    .order-current{
+        width: 956px;
+        margin: 20px 0;
+        border: 1px solid @color2;
+        overflow: hidden;
+        background: #FCFCFC;
+        table{
+            width: 100%;
+            border: none;
+            border-collapse: collapse;
+            border-spacing: none;
+            tr{ 
+                border: none;
+                background: #FCFCFC; 
+                td{
+                    border: none; 
+                    border-right: 1px solid @color2;                    
+                }
+                td:nth-child(2){
+                    border-right: none;                                       
+                }
+                .cell_1{
+                    text-align: center;
+                    font-size: @Size3;
+                }
+                .cell_2{
+                    margin: 0;
+                    padding: 0;
+                    .goods{
+                        width: 100%;
+                        border: none; 
+                        border-bottom: 1px solid @color2;
+                        tr{
+                            font-size: @Size2;
+                            color: @color3;
+                            text-align: center;   
+                            border: none;
+                            td{
+                                background: @color1;
+                                padding: 5px 10px 6px;
+                                border: none;                                
+                            }
+                            .infor{width: 298px; border-right: 1px solid white;}
+                            .color-suits{width: 100px; border-right: 1px solid white;}
+                            .saletype{width: 70px; border-right: 1px solid white;}
+                            .price{width: 60px; border-right: 1px solid white;}
+                            .agio{width: 84px; border-right: 1px solid white;}
+                            .amount{width: 30px; border-right: 1px solid white;}
+                            .total{width: 70px;}
+                            .totalValue{font-weight: bold; color: @color3;}
+                        }
+                        tr:nth-child(2) td{
+                            background: white;
+                            padding: 10px;
+                            text-align: center;
+                            color: @color3;
+                            line-height: 22px;
+                            vertical-align: top;
+                            border-top: 1px solid #f5f5f5;
+                        }
+                        .infor{
+                            a{
+                                display: block;
+                                float: left;
+                                overflow: hidden;
+                                img{
+                                    display: block;
+                                    width: 60px;
+                                    height: 62px; 
+                                    margin: 0 0 0 10px;
+                                    border: 1px solid @color2;
+                                }
+                            }
+                            .title{
+                                float: left;
+                                padding: 0 10px;
+                                width: 200px;
+                                height: 36px;
+                                font: @Size1 "Arial";
+                                overflow: hidden;
+                                text-align: left;
+                                a{
+                                    color: @color4;
+                                    &:hover{color: @color5;}
+                                }
+                            } 
+                        }
+                        .color-suits{
+                            .color{
+                                display: block;
+                                text-align: left;
+                            }
+                        }
+                    }
+                    .order-foot{
+                        padding: 0 0 10px;
+                        overflow: hidden;
+                        .store-infor{
+                            float: left;
+                            padding: 10px 0 0 20px;                            
+                            font: 12px/22px "Arial";
+                            color: @color3;
+                            overflow: hidden;
+                            .tag-security{
+                                float: left;
+                                display: inline;
+                                margin: 0 10px 0 -10px;
+                                padding: 0 0 0 20px;
+                                line-height: 20px;
+                                color: #666;
+                                cursor: default;
+                                text-decoration: none;
+                                background: url(../images/tag-security.png) no-repeat 0 0;                                
+                            }
+                            .z-security{
+                                float: left;
+                                margin: 0 10px 0 0;
+                                padding: 0 0 0 20px;
+                                line-height: 20px;
+                                color: @color3;
+                                cursor: default;
+                                text-decoration: none;
+                                background: url(../images/tag-securi.png) no-repeat 0 0;
+                            }
+                        }
+                        .delivery{
+                            float: right;
+                            padding: 3px 19px 0 0;
+                            font: @Size2 "Arial";
+                            color: #333;
+                            .payment{
+                                padding: 7px 0 0; 
+                                overflow: hidden;
+                                span{
+                                    display: block;
+                                    margin: 2px 5px 0 0;
+                                    float:left;
+                                    line-height: 22px;
+                                    color: @color3;
+                                }
+                                select{
+                                    float: right;
+                                    margin: 2px 0 0;
+                                    width: 158px;
+                                    border: 1px solid #abadb3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    //订单备注
+    .order-note{
+        height: 110px;
+        margin: 20px  auto;
+        margin-bottom: 10px;
+        border: 1px solid @color2;
+        background: #FCFCFC;
+        table{
+            margin: -2px 0 0 0;
+            padding: 0;
+            width: 100%;
+            border: none;
+            tr{                
+                border: none;
+                td{ 
+                    text-align: center;                 
+                    border: none;
+                }
+                .cell_1{
+                    width: 117px;
+                    height: 110px;
+                    border-right: 1px solid @color2;
+                }
+                .cell_2{
+                    width: 555px;
+                    height: 110px;
+                    font-size: @Size2;
+                    color: @color3;
+                    border-right: 1px solid @color2;
+                    .orderNote{
+                        display: block;
+                        padding: 2px 5px;
+                        width: 435px;
+                        height: 70px;
+                        text-align: left;
+                        line-height: 14px;
+                        margin-left: 59px;
+                        border: 1px solid #d6d6d6;
+                        resize: none;
+                        font-size: @Size1;
+                        overflow-y: auto;
+                        background: white;
+                    }
+                }
+                .cell_3{
+                    width: 281px;
+                    height: 111px;
+                    font-size: @Size2;
+                    color: @color3;
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            position: relative;
+                            padding: 0 20px 0 20px;
+                            height: 30px;
+                            font: @Size2 "Arial";
+                            color: #666;
+                            text-align: right;
+                            span{  
+                                display: block;
+                                margin-top: 5PX;
+                                margin-left: 0;
+                                text-align: left;
+//                              float: left;
+                            }
+                            e{
+                                display: block;
+                                margin-top: -20px;
+                                margin-right: 0;
+                                float: right;
+                                text-align: right;
+                            }
+                            #total-price{
+                                margin-top: -31px;
+                                font-size: 28PX; 
+                                color: @color5;
+                                font-weight: bolder;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //提交订单
+    .submit-order{
+        margin: 0;
+        padding: 0 0 50px 0;
+        border-bottom: 1px solid @color2;
+        overflow: hidden;
+        a{
+            font-size: @Size2;
+            color: @color4;
+            &:hover{color: @color5;}
+        }
+        .submit-btn{
+            display: block;
+            width: 160px;
+            height: 46px;
+            text-align: center;
+            line-height: 46px;
+            float: right;
+            margin-top: 30px;
+            border: 0 none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: @Size5;
+            color: #fff;
+            background: #DD2F2F;
+            &:hover{background: #CA2222; text-decoration: none; color: white;}            
+        }
+        #push{
+            display: block;
+            width: 160px;
+            height: 46px;
+            text-align: center;
+            line-height: 46px;
+            float: right;
+            margin-top: 30px;
+            border: 0 none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: @Size5;
+            color: #fff;
+            background: #DD2F2F;
+            &:hover{background: #CA2222; text-decoration: none; color: white;}            
+        }
+    }
+}
+//详情区结束
+

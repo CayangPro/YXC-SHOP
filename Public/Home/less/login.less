@@ -1,0 +1,223 @@
+//颜色*******************
+@color1: #F5F5F5; //顶部背景灰色
+@color2: #E6E6E6; //顶部下边框深灰色
+@color3: #666666; //字体深灰色
+@color4: #3366CC; //蓝色字体
+@color5: #CC0000; //hover效果朱红色
+@color6: #FF335A; //订单数量红色
+@color7: #333; //字体黑色
+@color8: #2D2D2D; //左侧菜单栏背景色
+@color9: #3D3D3D; //左侧菜单栏边框色
+@color10: #ababab;//网络字体颜色
+
+//字体大小*******************
+@Size1: 12px;
+@Size2: 14px;
+@Size3: 16px;
+@Size4: 18px;
+@Size5: 20px;
+@Size6: 22px;
+@Size9: 25px;
+
+
+*{ margin: 0;padding: 0; }
+body{background: @color1;}
+
+a{text-decoration: none;}
+a:hover{
+    color: @color5;
+    text-decoration: underline;
+}
+
+li{list-style: none;}
+input{outline: none;}
+
+//顶部区开始*******************
+#topBox{
+    width: 990px;
+    height: 60px;
+    margin: 15px auto;
+    font-size:@Size2; 
+    .topLogo{
+        width: 180px;
+        height: 60px;
+        margin-top: 0px;
+        margin-right: 10px;
+        float: left;
+    }
+    .topName{
+        width: 165px;
+        height: 50px;
+        margin-top: 5px;
+        margin-left: 10px;
+        text-align: right;
+        line-height: 50px;
+        border-left: 1px solid @color2;
+        font-size: @color2;
+        color: @color3;
+        float: left;
+    }
+    .topRight{
+        height: 50px;
+        float: right;
+        padding: 0 5px 0;
+        margin-top: 5px;
+        margin-right: 0;
+        text-align: center;
+        line-height: 50px;
+        font-size: @Size2;
+        color: @color3;
+        a{            
+            padding: 2px 10px 4px 10px;
+            text-decoration: none;
+            color: @color5;
+            &:hover{
+                background: @color5;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+//顶部区结束*******************
+
+//中间区开始*******************
+#centerBoxLogin{
+    width: 990px;
+    height: 350px;
+    margin: 70px auto;
+    border: 1px solid @color2;
+    #centerLeftBox{
+        width: 520px;
+        height: 350px;
+        float: left;
+        margin: 0;
+        img{
+            text-align: center;
+            width: 520px;
+            height: 350px;
+        }
+    }
+    #centerRightBox{
+        width: 470px;
+        height: 350px;
+        float: left;
+        margin: 0;
+        background: white;
+        font-size: @Size2;
+        color: @color3;
+        float: left; 
+        .titleBox{
+            width: 290px;
+            height: 28px;
+            margin: 5px auto;
+            margin-bottom: 20px;
+            padding: 20px 0 0;  
+            font-size: 22px;
+            font-family: "微软雅黑";
+            text-align: left;
+            line-height: 28px;
+        } 
+        .userPasswordBox{
+            width: 290px;
+            height: 40px;
+            margin: 10px auto;
+            border: 1px solid @color2;
+            font-size: @Size3;
+            text-align: left;
+            line-height: 40px;
+            input{
+                display: block;
+                border: none;
+                width: 278px;
+                height: 40px;
+                margin: 0 6px;
+                font-size: @Size3;
+            }
+        }
+        .codeBox{
+            margin:0 10px 10px 89px;
+            float: left;
+            width: 128px;
+            input{
+                width: 116px;
+            }
+        }
+        img{
+            display: block;
+            float: left;
+            width: 96px;
+            height: 40px;
+             margin: 0;
+            border: 1px solid @color2;
+            margin-right: 10px;
+        }
+        a{
+          display: block; 
+          height: 42px;
+          line-height: 40px;
+          color: @color4;
+          &:hover{color: @color5;}
+        }
+        .checkBox{
+             height: 30px;
+             width: 290px;
+             margin: 10px auto;
+             line-height: 30px;
+             text-align: left;
+        }
+        .loginBox{
+            width: 290px;
+            height: 40px;
+            margin: 10px auto;            
+            background: #DE3030;
+            border: 1px solid @color5;
+            border-radius: 3px;            
+            input{
+                width: 290px;
+                height: 40px;
+                border: none;
+                background-color: #DE3030;
+                text-align: center;
+                line-height: 40px;
+                color: white;
+                font-weight: bold;
+                font-size: @Size4;
+                cursor: pointer;
+                &:hover{background-color: #C61E1E;}
+            }        
+        }          
+    }
+
+}
+//中间区结束*******************
+
+
+//尾部************************
+#endFatherBOX{
+    width: 100%;
+    border-top: 1px solid @color2;
+    #endBOX{
+        width: 990px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+        position: relative;
+        font-family: "微软雅黑";
+        font-size: @Size2; 
+        color: @color3;
+        a{
+            margin: 0 10px; color: @color3;
+            &:hover{color: @color5;}
+        }
+        a:nth-child(1){margin-left: 0px;}
+        span{
+            display: block;
+            padding: 0;
+            float: right;
+        }
+    }
+}
+

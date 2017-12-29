@@ -1,0 +1,250 @@
+//颜色
+@color1: #F5F5F5; //顶部背景灰色
+@color2: #E6E6E6; //顶部下边框深灰色
+@color3: #666666; //字体深灰色
+@color4: #3366CC; //蓝色字体
+@color5: #CC0000; //hover效果朱红色
+@color6: #FF335A; //订单数量红色
+@color7: #333; //字体黑色
+@color8: #2D2D2D; //左侧菜单栏背景色
+@color9: #3D3D3D; //左侧菜单栏边框色
+@color10: #ababab;//网络字体颜色
+
+//字体大小
+@Size1: 12px;
+@Size2: 14px;
+@Size3: 16px;
+@Size4: 18px;
+@Size5: 20px;
+@Size9: 25px;
+
+
+*{ margin: 0;padding: 0; }
+
+a{text-decoration: none;}
+a:hover{
+    color: @color5;
+    text-decoration: underline;
+}
+
+li{list-style: none;}
+input{outline: none;}
+
+.shadow{box-shadow: 1px 1px 5px @color3;}
+
+
+#topBack{
+    width: 100%;
+    height: 29px;
+    margin: 0 auto;
+    background: @color1;
+    border-bottom: 1px solid @color2; 
+    #topFather{
+        width: 1100px;
+        height: 29px;      
+        margin: 1px auto;
+        position:relative;
+        line-height: 29px;
+        font-size: @Size1;
+        font-family: "Microsoft YaHei"; 
+        color:@color3;
+        //顶部左侧开始**********
+        #topLeft{
+            width: 340px;
+            height: 29px;      
+            float: left;
+            position:relative;
+            //顶部首页
+            .topHome{ 
+                padding: 0 20px 0 0; 
+                a{color: @color3;}
+                a:hover{color: @color5;}
+            }
+             //顶部登录
+            .topWelcomeLogin{ 
+                padding: 0 20px 0 0;
+                a{color: @color4;}
+                a:hover{color: @color5;}
+            }
+             //顶部注册
+            .topRegister{ 
+                padding: 0 0 0 0;
+                a{color: @color4;} 
+                a:hover{color: @color5;}
+            }
+        }
+        //顶部左侧结束      
+        
+        //顶部登右侧区开始
+        #topRight{
+            width: 440px;
+            height: 29px;      
+            float: right;
+            position: relative;
+            margin: 0;
+            li{
+                float: right;
+                margin: 0 10px;
+                height: 29px;
+                position: relative;
+                a{
+                    display: inline-block;
+                    color: @color3;
+                }
+                //联系客服
+                #service{
+                    display: inline-block;                   
+                    margin-right: -10px;
+                    height: 29px;
+                    position: relative;
+                    padding: 0 10px;
+                    border-left: 1px solid @color1;
+                    border-right: 1px solid @color1;
+                }
+                #serviceCall{
+                    width: 90px;
+                    height: 30px;
+                    line-height: 30px;
+                    border: 1px solid @color2;
+                    border-top: 1px solid white;
+                    position: absolute;
+                    top:29px;
+                    right: -10px;
+                    padding: 3px 5px;
+                    text-align: center;
+                    display:none;
+                    background: white;
+                    z-index: 10;
+                }      
+            }
+        }
+        
+        //hover效果
+        
+         #topRight a:hover{
+            color: @color5;
+            display: block;
+        }
+        #topRight li:hover #buyerCenter{
+            text-decoration: none;
+            border-left: 1px solid @color2;
+            border-right: 1px solid @color2;
+            background: white;
+        }        
+         #topRight li:hover #focus{
+             background: white;
+            color: @color5;
+            display:block;            
+        }
+        #focus a{text-decoration: none;}
+        #focus a:hover #focusShopsNum{
+            color: @color5;
+        }
+         #focus a:hover #focusGoodsNum{
+            color: @color5;
+        }
+        #topRight li:hover #service{
+            border-left: 1px solid @color2;
+            border-right: 1px solid @color2;
+            background: white;
+            display: block;
+        }
+        #topRight li:hover #serviceCall{
+            display: block;
+        }
+//     
+        //顶部右侧区结束
+    }
+}
+//顶部区结束******************
+
+//head区域开始
+#headBox{
+    width: 100%;
+    height: 82px;
+    margin: 0 auto;
+    background: @color5;
+    .headSon{
+        width: 1100px;
+        margin: 0 auto;
+        height: 65px;
+        position: relative;
+        overflow: hidden;
+        .headTitle{
+            display: block;
+            float: left;
+            width: 154px;
+            height: 38px;
+            position: absolute;
+            bottom: 0;
+            margin-left: 0;
+            margin-right: 34px;
+            background: url(../images/logo.png) no-repeat;
+        }
+        .headHome{
+            display: inline-block;
+            float: left;
+            width: 40px;
+            height: 38px;
+            position: absolute;
+            left: 188px;
+            bottom: 0;
+            font-size: @Size3;
+            color: white;
+            line-height: 38px;
+            text-align: center;
+            &:hover{
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+   
+} 
+//head区域结束
+
+//尾部************************
+#endFatherBox{
+    width: 100%;
+    border-top: 1 solid @color2;
+    background: @color8;
+    #endBox{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 10px 0;
+        position: relative;
+        font-family: "微软雅黑";
+        font-size: @Size1; 
+         color: @color3;
+        .endFoot{
+            width: 1200px;
+            line-height: 20px;
+            margin: 0px auto;
+            padding: 10px 0 ;
+            span{ 
+                display: block;
+                float: left;
+                margin-right: 10px;
+            }
+            a{
+               margin: 0;
+               padding: 0 10px;
+               color: @color3;
+               &:hover{
+                   cursor: default;
+                   text-decoration: none;
+               }
+            }
+        }
+        .endFootFirst{
+            color: white;
+            a{              
+                color: white;
+                &:hover{cursor: pointer;}
+            }
+        }
+    }
+}
+//尾部结束************************
+
+

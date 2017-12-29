@@ -1,0 +1,530 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #CC0000;
+  text-decoration: underline;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+#headBox {
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+#headBox #leftHeadBox {
+  width: 377px;
+  height: 40px;
+  margin-top: 30px;
+  float: left;
+}
+#headBox #leftHeadBox a {
+  display: block;
+  float: left;
+  height: 40px;
+}
+#headBox #rightHeadBox {
+  display: block;
+  margin-top: 30px;
+  float: right;
+  margin-right: 0px;
+}
+#headBox #rightHeadBox li {
+  display: block;
+  width: 90px;
+  height: 36px;
+  float: left;
+  text-align: center;
+  line-height: 36px;
+  font-size: 14px;
+  padding: 0 14px 0 0;
+  background: url("../images/step-bg.png") no-repeat 90px -74px;
+  background-color: #e6e6e6;
+}
+#headBox #rightHeadBox .s5 {
+  background: #e6e6e6;
+}
+#headBox #rightHeadBox .s1 {
+  background: url("../images/step-bg.png") no-repeat 90px 0px;
+  background-color: #FFCCCC;
+  color: black;
+}
+#headBox #rightHeadBox .s2 {
+  background: url("../images/step-bg.png") no-repeat 90px -37px;
+  background-color: #E02D2D;
+  color: white;
+}
+#wrapper {
+  width: 960px;
+  margin: 20px auto;
+  margin-bottom: -1px;
+  overflow: hidden;
+}
+#wrapper .perInfor {
+  width: 958px;
+  margin: 0 auto;
+  border: 1px solid #E6E6E6;
+  overflow: hidden;
+}
+#wrapper .perInfor table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: none;
+  overflow: hidden;
+}
+#wrapper .perInfor table tr {
+  border: none;
+}
+#wrapper .perInfor table tr td {
+  border: none;
+}
+#wrapper .perInfor table tr .cell_1 {
+  text-align: center;
+  font-size: 16px;
+  border-right: 1px solid #E6E6E6;
+}
+#wrapper .perInfor table tr .cell_2 {
+  padding: 10px;
+}
+#wrapper .perInfor table tr .cell_2 ul li {
+  font-size: 14px;
+  position: relative;
+  margin: 0 0 2px;
+  padding: 6px 88px 6px 10px;
+  color: #666;
+  background: #FCFCFC;
+  overflow: hidden;
+}
+#wrapper .perInfor table tr .cell_2 ul li label {
+  margin: 0 10px 0 0;
+}
+#wrapper .perInfor table tr .cell_2 ul li .operate {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  display: none;
+}
+#wrapper .perInfor table tr .cell_2 ul li .operate a {
+  padding: 0 0 0 20px;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor {
+  display: block;
+  height: 0;
+  padding: 0px 0 0px 22px;
+  overflow: hidden;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor dl {
+  overflow: hidden;
+  padding: 0 0 10px 75px;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor dl dt {
+  display: block;
+  float: left;
+  margin-left: -75px;
+  margin-top: -4px;
+  width: 82px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 26px;
+  color: #666;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor dl dt .xh {
+  display: block;
+  float: left;
+  margin: 0 8px 0px 0;
+  line-height: 26px;
+  font-family: "Simsun";
+  color: #CC0000;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor dl .cuTell {
+  display: block;
+  margin-left: 15px;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor dl .cuTell e {
+  line-height: 22px;
+  font-size: 12px;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor dl dd {
+  display: block;
+  float: left;
+  margin: 0 10px;
+  padding: 0;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor dl dd input {
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+  padding: 2px 5px;
+  width: 130px;
+  height: 20px;
+  border: 1px solid #d6d6d6;
+  font-size: 14px;
+  color: #666666;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor dl dd .addinput {
+  width: 400px;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor dl .clearfix {
+  display: block;
+  height: 26px;
+  float: left;
+  overflow: hidden;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor dl .clearfix select {
+  display: block;
+  width: 87px;
+  height: 26px;
+  margin: 0px 10px 0 0;
+  border: 1px solid #d6d6d6;
+  vertical-align: middle;
+  font-size: 100%;
+  float: left;
+  overflow: hidden;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor .w120-btn {
+  display: block;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  margin-top: 15px;
+  border: 0 none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  background: #CC0000;
+}
+#wrapper .perInfor table tr .cell_2 ul li .infor-editor .w120-btn:hover {
+  opacity: 0.8;
+}
+#wrapper .perInfor table tr .cell_2 ul li:hover .operate {
+  display: block;
+}
+#wrapper .perInfor table tr .cell_2 .addAddress .operateAdd a {
+  display: none;
+}
+#wrapper .perInfor table tr .cell_2 .addAddress label {
+  font-size: 14px;
+}
+#wrapper .order-current {
+  width: 956px;
+  margin: 20px 0;
+  border: 1px solid #E6E6E6;
+  overflow: hidden;
+  background: #FCFCFC;
+}
+#wrapper .order-current table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: none;
+}
+#wrapper .order-current table tr {
+  border: none;
+  background: #FCFCFC;
+}
+#wrapper .order-current table tr td {
+  border: none;
+  border-right: 1px solid #E6E6E6;
+}
+#wrapper .order-current table tr td:nth-child(2) {
+  border-right: none;
+}
+#wrapper .order-current table tr .cell_1 {
+  text-align: center;
+  font-size: 16px;
+}
+#wrapper .order-current table tr .cell_2 {
+  margin: 0;
+  padding: 0;
+}
+#wrapper .order-current table tr .cell_2 .goods {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #E6E6E6;
+}
+#wrapper .order-current table tr .cell_2 .goods tr {
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  border: none;
+}
+#wrapper .order-current table tr .cell_2 .goods tr td {
+  background: #F5F5F5;
+  padding: 5px 10px 6px;
+  border: none;
+}
+#wrapper .order-current table tr .cell_2 .goods tr .infor {
+  width: 298px;
+  border-right: 1px solid white;
+}
+#wrapper .order-current table tr .cell_2 .goods tr .color-suits {
+  width: 100px;
+  border-right: 1px solid white;
+}
+#wrapper .order-current table tr .cell_2 .goods tr .saletype {
+  width: 70px;
+  border-right: 1px solid white;
+}
+#wrapper .order-current table tr .cell_2 .goods tr .price {
+  width: 60px;
+  border-right: 1px solid white;
+}
+#wrapper .order-current table tr .cell_2 .goods tr .agio {
+  width: 84px;
+  border-right: 1px solid white;
+}
+#wrapper .order-current table tr .cell_2 .goods tr .amount {
+  width: 30px;
+  border-right: 1px solid white;
+}
+#wrapper .order-current table tr .cell_2 .goods tr .total {
+  width: 70px;
+}
+#wrapper .order-current table tr .cell_2 .goods tr .totalValue {
+  font-weight: bold;
+  color: #666666;
+}
+#wrapper .order-current table tr .cell_2 .goods tr:nth-child(2) td {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  color: #666666;
+  line-height: 22px;
+  vertical-align: top;
+  border-top: 1px solid #f5f5f5;
+}
+#wrapper .order-current table tr .cell_2 .goods .infor a {
+  display: block;
+  float: left;
+  overflow: hidden;
+}
+#wrapper .order-current table tr .cell_2 .goods .infor a img {
+  display: block;
+  width: 60px;
+  height: 62px;
+  margin: 0 0 0 10px;
+  border: 1px solid #E6E6E6;
+}
+#wrapper .order-current table tr .cell_2 .goods .infor .title {
+  float: left;
+  padding: 0 10px;
+  width: 200px;
+  height: 36px;
+  font: 12px "Arial";
+  overflow: hidden;
+  text-align: left;
+}
+#wrapper .order-current table tr .cell_2 .goods .infor .title a {
+  color: #3366CC;
+}
+#wrapper .order-current table tr .cell_2 .goods .infor .title a:hover {
+  color: #CC0000;
+}
+#wrapper .order-current table tr .cell_2 .goods .color-suits .color {
+  display: block;
+  text-align: left;
+}
+#wrapper .order-current table tr .cell_2 .order-foot {
+  padding: 0 0 10px;
+  overflow: hidden;
+}
+#wrapper .order-current table tr .cell_2 .order-foot .store-infor {
+  float: left;
+  padding: 10px 0 0 20px;
+  font: 12px/22px "Arial";
+  color: #666666;
+  overflow: hidden;
+}
+#wrapper .order-current table tr .cell_2 .order-foot .store-infor .tag-security {
+  float: left;
+  display: inline;
+  margin: 0 10px 0 -10px;
+  padding: 0 0 0 20px;
+  line-height: 20px;
+  color: #666;
+  cursor: default;
+  text-decoration: none;
+  background: url(../images/tag-security.png) no-repeat 0 0;
+}
+#wrapper .order-current table tr .cell_2 .order-foot .store-infor .z-security {
+  float: left;
+  margin: 0 10px 0 0;
+  padding: 0 0 0 20px;
+  line-height: 20px;
+  color: #666666;
+  cursor: default;
+  text-decoration: none;
+  background: url(../images/tag-securi.png) no-repeat 0 0;
+}
+#wrapper .order-current table tr .cell_2 .order-foot .delivery {
+  float: right;
+  padding: 3px 19px 0 0;
+  font: 14px "Arial";
+  color: #333;
+}
+#wrapper .order-current table tr .cell_2 .order-foot .delivery .payment {
+  padding: 7px 0 0;
+  overflow: hidden;
+}
+#wrapper .order-current table tr .cell_2 .order-foot .delivery .payment span {
+  display: block;
+  margin: 2px 5px 0 0;
+  float: left;
+  line-height: 22px;
+  color: #666666;
+}
+#wrapper .order-current table tr .cell_2 .order-foot .delivery .payment select {
+  float: right;
+  margin: 2px 0 0;
+  width: 158px;
+  border: 1px solid #abadb3;
+}
+#wrapper .order-note {
+  height: 110px;
+  margin: 20px auto;
+  margin-bottom: 10px;
+  border: 1px solid #E6E6E6;
+  background: #FCFCFC;
+}
+#wrapper .order-note table {
+  margin: -2px 0 0 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+}
+#wrapper .order-note table tr {
+  border: none;
+}
+#wrapper .order-note table tr td {
+  text-align: center;
+  border: none;
+}
+#wrapper .order-note table tr .cell_1 {
+  width: 117px;
+  height: 110px;
+  border-right: 1px solid #E6E6E6;
+}
+#wrapper .order-note table tr .cell_2 {
+  width: 555px;
+  height: 110px;
+  font-size: 14px;
+  color: #666666;
+  border-right: 1px solid #E6E6E6;
+}
+#wrapper .order-note table tr .cell_2 .orderNote {
+  display: block;
+  padding: 2px 5px;
+  width: 435px;
+  height: 70px;
+  text-align: left;
+  line-height: 14px;
+  margin-left: 59px;
+  border: 1px solid #d6d6d6;
+  resize: none;
+  font-size: 12px;
+  overflow-y: auto;
+  background: white;
+}
+#wrapper .order-note table tr .cell_3 {
+  width: 281px;
+  height: 111px;
+  font-size: 14px;
+  color: #666666;
+}
+#wrapper .order-note table tr .cell_3 ul {
+  margin: 0;
+  padding: 0;
+}
+#wrapper .order-note table tr .cell_3 ul li {
+  position: relative;
+  padding: 0 20px 0 20px;
+  height: 30px;
+  font: 14px "Arial";
+  color: #666;
+  text-align: right;
+}
+#wrapper .order-note table tr .cell_3 ul li span {
+  display: block;
+  margin-top: 5PX;
+  margin-left: 0;
+  text-align: left;
+}
+#wrapper .order-note table tr .cell_3 ul li e {
+  display: block;
+  margin-top: -20px;
+  margin-right: 0;
+  float: right;
+  text-align: right;
+}
+#wrapper .order-note table tr .cell_3 ul li #total-price {
+  margin-top: -31px;
+  font-size: 28PX;
+  color: #CC0000;
+  font-weight: bolder;
+}
+#wrapper .submit-order {
+  margin: 0;
+  padding: 0 0 50px 0;
+  border-bottom: 1px solid #E6E6E6;
+  overflow: hidden;
+}
+#wrapper .submit-order a {
+  font-size: 14px;
+  color: #3366CC;
+}
+#wrapper .submit-order a:hover {
+  color: #CC0000;
+}
+#wrapper .submit-order .submit-btn {
+  display: block;
+  width: 160px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  float: right;
+  margin-top: 30px;
+  border: 0 none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  background: #DD2F2F;
+}
+#wrapper .submit-order .submit-btn:hover {
+  background: #CA2222;
+  text-decoration: none;
+  color: white;
+}
+#wrapper .submit-order #push {
+  display: block;
+  width: 160px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  float: right;
+  margin-top: 30px;
+  border: 0 none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  background: #DD2F2F;
+}
+#wrapper .submit-order #push:hover {
+  background: #CA2222;
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=order.css.map */

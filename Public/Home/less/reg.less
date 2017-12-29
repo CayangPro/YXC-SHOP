@@ -1,0 +1,252 @@
+//颜色*******************
+@color1: #F5F5F5; //顶部背景灰色
+@color2: #E6E6E6; //顶部下边框深灰色
+@color3: #666666; //字体深灰色
+@color4: #3366CC; //蓝色字体
+@color5: #CC0000; //hover效果朱红色
+@color6: #FF335A; //订单数量红色
+@color7: #333; //字体黑色
+@color8: #2D2D2D; //左侧菜单栏背景色
+@color9: #3D3D3D; //左侧菜单栏边框色
+@color10: #ababab;//网络字体颜色
+
+//字体大小*****************
+@Size1: 12px;
+@Size2: 14px;
+@Size3: 16px;
+@Size4: 18px;
+
+@size8: 22px;
+@Size9: 25px;
+
+
+*{ margin: 0;padding: 0; }
+
+a{text-decoration: none;}
+a:hover{
+    color: @color5;
+    text-decoration: underline;
+}
+
+li{list-style: none;}
+input{outline: none;}
+
+//顶部区开始*******************
+#topBox{
+    width: 990px;
+    height: 60px;
+    margin: 15px auto;
+    font-size:@Size2; 
+    .topLogo{
+        width: 180px;
+        height: 60px;
+        margin-top: 0px;
+        margin-right: 10px;
+        float: left;
+    }
+    .topName{
+        width: 165px;
+        height: 50px;
+        margin-top: 5px;
+        margin-left: 10px;
+        text-align: right;
+        line-height: 50px;
+        border-left: 1px solid @color2;
+        font-size: @color2;
+        color: @color3;
+        float: left;
+    }
+    .topRight{
+        height: 50px;
+        float: right;
+        padding: 0 5px 0;
+        margin-top: 5px;
+        margin-right: 0;
+        text-align: center;
+        line-height: 50px;
+        font-size: @Size2;
+        color: @color3;
+        a{            
+            padding: 2px 10px 4px 10px;
+            text-decoration: none;
+            color: @color5;
+            &:hover{
+                background: @color5;
+                color: white;
+                cursor: pointer;
+            }
+        }        
+    }
+}
+//顶部区结束*******************
+
+//中间区开始*******************
+#centerBoxReg{
+    width: 990px;
+    margin: 20px auto;
+    margin-bottom: 60px;
+    border: 1px solid @color2;    
+    .kszcBox{
+        width: 990px;
+        height: 60px;
+        margin: 0 auto;
+        margin-bottom: 30px;             
+        font-size: 22px;
+        color: @color3;
+        text-align: center;
+        line-height: 60px;
+        background: @color1;   
+    }
+    .zhaoHao{
+        width: 500px;
+        height: 40px;
+        margin: 20px auto;    
+        span{
+            display: block;
+            width: 248px;
+            height: 38px;
+            font-size: @size8;
+            color: @color5;
+            text-align: center;
+            line-height: 36px;
+            border: 1px solid @color2;
+            border-top: 3px solid @color5;
+            border-bottom: none;
+            float: left;
+        }
+        span:nth-child(2){
+            height: 41px;
+            border: none;
+            border-bottom: 1px solid @color2;
+            
+        }
+    }
+    .inputFatherBox{
+        position: relative;
+        width: 500px;
+        height: 40px;
+        margin: 60px auto;
+        .intoBox{
+            width: 400px;
+            height: 40px;
+            float: right;
+            margin-right: -1px;
+            margin-top: -41px;
+            border: 1px solid @color2;
+            background: white;
+            input{
+                display: block;
+                border: none;
+                width: 388px;
+                height: 40px;
+                margin: 0 5px;
+                font-size: @Size3;
+            }
+        }  
+        .label{
+            width: 90px;
+            height: 40px;
+            margin-right: 10px;
+            text-align: right;
+            line-height: 40px;
+            float: left;
+            font-size: @Size3;
+            p{
+                display: inline-block;
+                height: 40px;
+                float: left;
+                line-height: 45px;
+                padding: 0 5px;
+                color: @color5;
+                font-size: @Size2;
+            }
+        }        
+        .tips{
+            width: 400px;
+            height: 24px;
+            float: right;
+            margin-left: 100px;
+            margin-top: 5px;
+            line-height: 24px;
+            font-size: @Size2;
+            color: @color3;
+        }
+    }
+    .codeFatherBox{
+        .codeInto{
+            margin-top: -1px;
+            width: 228px;
+            float: left;
+            margin-right: 10px;
+            input{
+                width: 218px;
+            }
+       }
+       img{
+           display: block;
+           float: left;
+           width: 100px;
+           height: 40px;
+           margin: -1px;
+           margin-right: 10px;
+           border: 1px solid @color2;
+       }
+       a{
+          display: block; 
+          height: 42px;
+          line-height: 40px;
+          color: @color4;
+          &:hover{color: @color5;}
+       }
+    }
+    .regBox{
+        width: 290px;
+        height: 40px;
+        margin: 40px auto;  
+        border: 1px solid @color5;
+        border-radius: 3px;
+        input{
+            width: 290px;
+            height: 40px;
+            border: none;
+            background-color: #DE3030;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            font-weight: bold;
+            font-size: @Size4;
+            cursor: pointer;
+            &:hover{background-color: #C61E1E;}
+        }        
+    }
+    
+}
+//中间区结束*******************
+
+//尾部************************
+#endFatherBOX{
+    width: 100%;
+    border-top: 1px solid @color2;
+    #endBOX{
+        width: 990px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+        position: relative;
+        font-family: "微软雅黑";
+        font-size: @Size2; 
+        color: @color3;
+        a{
+            margin: 0 10px; color: @color3;
+            &:hover{color: @color5;}
+        }
+        a:nth-child(1){margin-left: 0px;}
+        span{
+            display: block;
+            padding: 0;
+            float: right;
+        }
+    }
+}
+

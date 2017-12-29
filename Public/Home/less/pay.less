@@ -1,0 +1,289 @@
+//颜色
+@color1: #F5F5F5; //顶部背景灰色
+@color2: #E6E6E6; //顶部下边框深灰色
+@color3: #666666; //字体深灰色
+@color4: #3366CC; //蓝色字体
+@color5: #CC0000; //hover效果朱红色
+@color6: #FF335A; //订单数量红色
+@color7: #333; //字体黑色
+@color8: #2D2D2D; //左侧菜单栏背景色
+@color9: #3D3D3D; //左侧菜单栏边框色
+@color10: #ababab;//网络字体颜色
+
+//字体大小
+@Size1: 12px;
+@Size2: 14px;
+@Size3: 16px;
+@Size4: 18px;
+@Size5: 20px;
+@Size9: 25px;
+@Size10: 30x;
+
+*{ margin: 0;padding: 0; }
+
+a{text-decoration: none;}
+a:hover{
+    color: @color5;
+    text-decoration: underline;
+}
+
+li{list-style: none;}
+
+
+//head区域开始
+#headBox{
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    #leftHeadBox{
+        width: 377px;
+        height: 40px;
+        margin-top: 30px;
+        float: left;
+        a{
+            display: block;
+            float: left;
+            height: 40px;
+        }
+    }
+    #rightHeadBox{
+        display: block;
+        margin-top: 30px;
+        float: right;
+        margin-right: 0px;
+        li{
+            display: block;
+            width: 90px;
+            height: 36px;
+            float: left;
+            text-align: center;
+            line-height: 36px;
+            font-size: @Size2;
+            padding: 0 14px 0 0;
+            background: url("../images/step-bg.png") no-repeat 90px -74px;
+            background-color: #e6e6e6;
+        }
+        .s5{background: #e6e6e6;}
+        .s1{
+            background: url("../images/step-bg.png") no-repeat 90px -148px;
+            background-color: #FFCCCC; 
+            color: @color5;
+        }
+        .s2{
+            background: url("../images/step-bg.png") no-repeat 90px 0;
+            background-color: #FFCCCC;
+            color: @color5;
+        }
+        .s3{
+            background: url("../images/step-bg.png") no-repeat 90px -37px;
+            background-color: #E02D2D; 
+            color: white;
+        }
+    }
+}
+//head区域结束
+
+//详情区开始
+#wrapper{
+    width: 960px;
+    margin: 20px auto;
+    margin-bottom: 60px; 
+    border: 1px solid @color2;
+    overflow: hidden;
+    //顶部信息区
+    .infoFatherBox{
+        width: 960px;
+        margin: -1px;
+        border: 1px solid @color2;
+        background: @color1;
+        position: relative;
+        overflow: hidden;
+        .orderInfoBox{
+            width: 780px;
+            float: left;
+            margin: 5px 16px 5px 27px;
+            overflow: hidden;
+            .orderMoney{
+                height: 26px;
+                position: relative;
+                margin-right: 0;
+                font-size: @Size2;
+                text-align: right;
+                color: @color3;
+                line-height: 26px;
+                margin: 11px 0;
+                p{
+                    display: block;
+                    float: left;
+                    margin: 0;
+                    line-height: 26px;
+                    font-size: @Size4;
+                    e{color: @color5;}
+                }
+                span{
+                    margin: 0 5px;
+                    font-size: @Size5;
+                    font-weight: bold;
+                    color: @color5;
+                }
+            }
+            p{
+               display: block;
+               height: 26px;
+               margin: 0;
+               line-height: 26px;
+               font-size: @Size2; 
+               color: @color3;
+            }
+            .orderName{
+                width: 440px;
+                overflow: hidden;
+            }
+        }
+        .orderErWei{
+            width: 111px;
+            height: 152px;
+            float: left;
+            margin: 5px 0 5px 0;
+            background: white;
+            img{
+                display: block;
+                margin: 5px;
+                width: 101px;
+                height: 101px;
+            }
+            span{
+                display: block;
+                width: 101px;
+                height: 12px;
+                margin-left: 20px;
+                margin-top: 15px;
+                background: url(../images/index.png) no-repeat 0 2px;
+            }
+        }
+    }
+    //支付方式
+    .payChoose{
+        height: 66px;
+        width: 920px;
+        margin: 20px auto;
+        overflow: hidden;
+        border-bottom: 1px solid @color2;
+        .payNum{
+            height: 44px;
+            width: 175px; 
+            float: left;
+            margin: 11px 0;
+            font-size: @Size3;
+            color: @color3;
+            line-height: 42px; 
+            text-align: right;
+            span{
+                display: block;
+                float: left;
+                width: 22px;
+                height: 22px;
+                margin: 10px 5px 11px 10px;
+                border: 1px solid @color2; 
+                cursor: pointer;            
+            }
+            .iclick{background: url(../images/index.png) no-repeat 0 -50px;}
+            .nclick{background: url(../images/index.png) no-repeat 0 -79px;}
+        }
+        .zfpayNum{
+            height: 42px;
+            width: 138px; 
+            float: left;
+            margin: 11px 10px;
+            border: 1px solid @color5;
+            background: white;
+            text-align: center;
+            img{
+                height: 38px;
+                width: 138px;
+                margin: 2px 0; 
+            }
+        }
+        .paytotal{
+            height: 44px;
+            float: right;
+            margin: 11px 10px;
+            text-align: right;
+            line-height: 44px;
+            font-size: @Size3;
+            color: @color3;
+            background: white;
+            text-align: center;
+            span{
+                font-size: @Size5;
+                color: @color5;
+            }
+        }
+       
+    }
+    
+     //立即支付
+    .payNow{
+        width: 920px;
+        margin: 20px auto;
+        overflow: hidden;
+        border-bottom: 1px solid @color2;
+        .payNowNum{
+            display: block;
+            width: 162px;
+            height: 44px;
+            margin: 0 10px;
+            font-size: @Size5;
+            color: white;
+            line-height: 44px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #CC0000;
+            display: block;
+            &:hover{background-color: #B90000;}
+        }
+        //提示
+        .notice{
+            width: 900px;
+            height: 30px;
+            margin: 15px 0 30px 10px;
+            font-size: 13px;
+            color: #FF6600;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #FFCC7D;            
+            background: url(../images/mark.png) no-repeat 10px 9.5px;    
+            background-color: #FFFDEA;   
+        }   
+    }
+    
+    //常见问题
+    .problemBox{
+        width: 920px;
+        margin: 30px auto;
+        .pb1{
+            width: 910px;
+            margin: 0 0 20px 10px;
+            font-size: @Size3;
+            color: @color7;
+        }
+        .pb2{
+            width: 910px;
+            margin: 20px 0 0 10px;
+            font-size: @Size2;
+            color: @color7;
+        }
+        .pb3{
+            width: 910px;
+            margin: 5px 0 0 10px;
+            font-size: @Size1;
+            color: @color3;
+        }
+
+    }
+    
+} 
+//详情区结束
+

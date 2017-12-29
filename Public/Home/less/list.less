@@ -1,0 +1,446 @@
+//颜色*******************
+@color1: #F5F5F5; //顶部背景灰色
+@color2: #E6E6E6; //顶部下边框深灰色
+@color3: #666666; //字体深灰色
+@color4: #3366CC; //蓝色字体
+@color5: #CC0000; //hover效果朱红色
+@color6: #FF335A; //订单数量红色
+@color7: #333; //字体黑色
+@color8: #2D2D2D; //左侧菜单栏背景色
+@color9: #3D3D3D; //左侧菜单栏边框色
+@color10: #ababab;//网络字体颜色
+
+//字体大小*******************
+@Size1: 12px;
+@Size2: 14px;
+@Size3: 16px;
+@Size4: 18px;
+@Size5: 20px;
+
+@Size9: 25px;
+
+
+*{ margin: 0;padding: 0; }
+
+a{text-decoration: none;}
+a:hover{
+    color: @color5;
+    text-decoration: underline;
+}
+
+li{list-style: none;}
+input{outline: none;}
+
+//商品分类区开始*******************
+#bannerFatherBox{
+    width: 1200px;
+    height: 34px;
+    margin: 0 auto;
+    position:relative;
+//  background: greenyellow;
+    //左侧区
+    .bannerLeft{
+        width: 200px;
+        height: 34px;
+        margin: 0 0;
+        text-align: center;
+        line-height: 34px;
+        font-size: @Size3;
+        font-family: "Microsoft YaHei";
+        color: white;
+        background: @color5;
+        float: left;
+    }
+     //右侧区
+    .bannerRight{
+        display: block;
+        width: 1000px;
+        height: 32px;
+        margin: 0 0;
+        position: relative;
+        text-align: center;
+        line-height: 32px;
+        font-size: @Size3;
+        font-family: "Microsoft YaHei";
+        border-bottom: 2px solid @color5;
+        float: left;        
+        li{
+            float: left;
+            padding: 0 11px;
+            a{color: @color7;}
+            a:hover{
+                color: @color6;
+                text-decoration: none;
+            }
+        } 
+        .bannerHot{
+            position: absolute;
+            height: 32px;
+            right: 0;
+            color: @color6;  
+        }
+    }
+}
+//商品分类区结束*******************
+
+//首页开始****************************
+#ListhomeBOX{
+    display: block;
+    width: 1200px;
+    height: 26px;
+    margin: 10px auto;
+    position: relative;
+//  background: lightpink;
+    line-height: 26px;
+    //共多少件
+    .homeTotal{
+        width: 62px;
+        height: 26px;
+        position: absolute;
+        right:0;
+        line-height: 26px;
+        text-align: center;
+        font-size: @Size2;
+        span{color: @color5;}
+    }
+    li{
+        display:block;
+        height: 24px;
+        line-height: 24px;
+        position: relative;
+        margin: 0 6px 0 0;
+        text-align: center;        
+        float: left;
+        a{
+            border: 1px solid @color2;
+            padding: 3px 10px;
+            font-size: 15px;
+            color: @color3;
+            &:hover{
+                color: @color6;
+                border-color: @color6;
+                text-decoration: none;
+            } 
+        }
+    }
+}
+//首页结束
+//筛选框区开始
+#screenBox{
+    width: 1200px;
+    height: 76px;
+    margin: 10px auto;
+    position: relative;
+    border: 2px solid @color2;
+    overflow: hidden;
+    z-index: 1; 
+    .screenBoxList{
+        width: 1200px;
+//      height: 127px;
+        position: relative;
+        margin: 0 0;
+        background: @color1;
+        border-right: 1px solid @color2;
+        float: left;
+        dl{            
+            position: relative;
+            margin-top: -1px;
+            padding: 0 0 0 109px;
+            background: #f7f7f7;
+            overflow: hidden;
+            dt{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                padding: 0 15px 0 0;
+                width: 94px;
+//              height: 38px;
+                line-height: 38px;
+                font-size: @Size2;
+                text-align: right;
+                color: #666;
+                overflow: hidden;
+            }
+            dd{  
+//              display: block;
+                position: relative;              
+//              height: 38px;
+                padding: 0 20px;
+                color: #999;
+                overflow: hidden;
+                border-left: 1px solid #e6e6e6;
+                background: #fff;
+                .listsInner{
+                    position: relative;
+                    margin-top: 0;
+                    border-top:1px solid #ebebeb;
+                    ul{
+                        display: block;
+                        height: 38px;
+                        margin: 0;
+//                      overflow: hidden;
+                        li{
+                            padding: 0 20px 0 0;
+                            background: #fff;
+                            float: left;
+                            text-align: left;
+                            a{
+                                position: relative;
+                                display: block;
+                                margin: 0 5px;
+                                height: 38px;
+                                line-height: 38px;
+                                font-size: @Size2;
+                                color: @color3;
+                                &:hover{color: @color6;}
+                            }
+                        }
+                    }
+                }                
+            }
+        }
+        
+    }
+ 
+}
+    
+#shadow{
+    width: 1204px;
+    height: 5px;
+    margin: 0 auto;
+    margin-top: -10px;
+    background: @color1;
+}
+.moreChoice{
+    width: 120px;
+    height: 26px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 22px;
+    font-size: @Size2;
+    font-family: "微软雅黑";
+    background: @color1;
+    color: @color3;
+    cursor: pointer;
+}
+//品牌框区结束
+
+//商品排序导航开始************************
+#goodsNav{
+    width: 1200px;
+    height: 38px;
+    margin: 50px auto;
+    margin-bottom: 30px;
+    border: 1px solid @color2;
+    background: @color1;
+    #navLeftBOX{
+        width: 964px;
+        height: 38px;
+        position: relative;
+        font-family: "微软雅黑";
+        font-size: @Size2;
+        color: @color3;
+        line-height: 38px;
+        text-align: center;
+        margin: 0;
+        li{
+            float: left; padding: 0 15px;
+            a{color: @color3;}
+        }
+        li:nth-child(1) {background: white; border-right:1px solid @color2;}
+        li:nth-child(1) a{color: @color5; }
+        //价格排序
+        .navPrice{
+            width: 146px;
+            height: 68px;
+            border: 1 solid @color2;
+            border-top: 1 solid @color2;
+            input{
+                display: inline-block;
+//              overflow: hidden;
+                width: 54px;
+                height: 24px;
+            }
+            span{display: none;}
+        }
+    }
+    #navLeftBOX:hover a{text-decoration: none;}
+}
+//商品排序导航结束************************
+
+//具体商品图片展示开始***********************
+#goodsShow{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: -20px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    li{
+        display: block;
+        position: relative;
+        float: left;
+        margin: 30px  0;
+        padding: 20px 20px 10px;
+        overflow:hidden;
+        width: 200px;
+        height: 348px;
+        img{
+            width: 200px;
+            height: 200px;
+            margin-top: 0px;
+            text-align: center;
+        }
+        .title{
+            padding: 16px 0 0;
+            height: 56px;
+            text-align: left;
+            overflow: hidden;
+            font-size: @Size1;
+            font-family: "微软雅黑";
+            a{color: @color3;}
+        }
+        .price{
+            height: 32px;
+            width: 200px;
+            margin: 0;
+            padding: 0 0;
+            overflow: hidden;
+            text-align: left;
+            line-height: 32px;
+            font-size: @Size4;
+            font-family: "微软雅黑";
+            color: @color5;
+        }
+        .volume{
+            margin: 0;
+            height: 32px;
+            width: 200px;
+            padding: 0 0;
+            overflow: hidden;
+            font-size: @Size2;
+            font-family: "微软雅黑";
+            color: @color5;
+            span{color: @color3;}
+            span:nth-child(1){margin-left: 0;}
+            span:nth-child(2){margin-right: 0;}
+            span:nth-child(2) em{color: @color4;}
+        }
+        .shopInfor{
+            margin: 0;
+            height: 20px;
+            width: 200px;
+            padding: 0 0;
+            overflow: hidden;
+            font-size: @Size2;
+            font-family: "微软雅黑";
+            color: @color5;
+            a{color: @color3;}
+        }
+        &:hover{
+            width: 190px;
+            margin: 30px 5px;
+            box-shadow: 1px 1px 5px @color3;
+        }
+    }
+    
+}
+//具体商品图片展示结束***********************
+
+//翻页区开始*******************
+#page{
+    display: block;
+    width: 420px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin: 35px auto;
+    font-size: @Size4;
+    font-family: "微软雅黑";
+    color: @color3;
+    a{color: @color3;}
+    li{
+       display: block;
+       height: 34px;
+       float: left;
+       border: 1px solid @color3;
+       margin: 0 3px;
+       padding: 0 12px;
+       cursor: pointer;
+       color: @color3;
+       &:hover{background: @color5; color: white;}
+    }
+    li:nth-child(5){border: none;padding: 0;}
+}
+//翻页区结束*******************
+
+//正在进行中的活动区开始**********************
+#HOT{
+    margin: 15px auto;
+    width: 174;
+    height: 40px;
+    text-align: center;
+    font-size: @Size5;
+    font-family: "微软雅黑";
+    color: @color3;
+}    
+
+#hotImg{
+    width: 1200px;
+    height: 214px;
+    margin: 5px auto;background: white;
+   a{
+       display: block;
+       float: left;
+       margin: 0 0 0 20px;
+       width: 285px;
+       height: 214px;
+       img{width: 285px;
+        height: 214px;}
+    }
+    a:nth-child(1){margin: 0;}
+}
+          
+//正在进行中的活动区结束*********************
+
+//底部搜索区开始*********************
+#searchBottomBox{
+    width: 536px;
+    height: 32px;
+    position: relative;
+    margin: 25px auto;
+    border: 2px solid @color5;
+    //搜索框输入区
+    .searchContent{            
+        width: 446px;
+        height: 32px;
+        border: none;
+        position: absolute;
+        top: 0px;
+        left: 4px;
+        font-size: @Size2;
+        line-height: 32px;
+        color: @color3;
+        background: white;
+    }
+    //搜索框按钮
+    .searchBtn{
+        width: 87px;
+        height: 32px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 2px solid @color5;
+        text-align: center;
+        line-height: 28px;
+        font-family: "微软雅黑";
+        font-size: @Size4;
+        color: white;
+        background: @color5;
+        cursor: pointer;
+    }
+}
+
+//底部搜索区结束*********************
+

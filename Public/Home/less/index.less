@@ -1,0 +1,1082 @@
+//颜色*******************
+@color1: #F5F5F5; //顶部背景灰色
+@color2: #E6E6E6; //顶部下边框深灰色
+@color3: #666666; //字体深灰色
+@color4: #3366CC; //蓝色字体
+@color5: #CC0000; //hover效果朱红色
+@color6: #FF335A; //订单数量红色
+@color7: #333; //字体黑色
+@color8: #2D2D2D; //左侧菜单栏背景色
+@color9: #3D3D3D; //左侧菜单栏边框色
+@color10: #ababab;//网络字体颜色
+
+//字体大小*******************
+@Size1: 12px;
+@Size2: 14px;
+@Size3: 16px;
+@Size4: 18px;
+
+@Size9: 25px;
+
+
+*{ margin: 0;padding: 0; }
+
+a{text-decoration: none;}
+a:hover{
+    color: @color5;
+    text-decoration: underline;
+}
+
+li{list-style: none;}
+input{outline: none;}
+
+//顶部区开始*******************
+#topBack{
+    width: 100%;
+    height: 29px;
+    margin: 0 auto;
+    background: @color1;
+    border-bottom: 1px solid @color2; 
+    #topFather{
+        width: 1200px;
+        height: 29px;      
+        margin: 1px auto;
+        position:relative;
+        line-height: 29px;
+        font-size: @Size1;
+        font-family: "Microsoft YaHei"; 
+        color:@color3;
+        //顶部左侧开始**********
+        #topLeft{
+            width: 400px;
+            height: 29px;      
+            float: left;
+            position:relative;
+            //顶部首页
+            .topHome{ 
+                padding: 0 20px 0 0; 
+                a{color: @color3;}
+                a:hover{color: @color5;}
+            }
+             //顶部登录
+            .topWelcomeLogin{ 
+                padding: 0 20px 0 0;
+                a{color: @color4;}
+                a:hover{color: @color5;}
+            }
+             //顶部注册
+            .topRegister{ 
+                padding: 0 0 0 0;
+                a{color: @color4;} 
+                a:hover{color: @color5;}
+            }
+        }
+        //顶部左侧结束      
+        
+        //顶部登右侧区开始
+        #topRight{
+            width: 680px;
+            height: 29px;      
+            float: right;
+            position: relative;
+            margin: 0;
+            li{
+                float: right;
+                margin: 0 10px;
+                height: 29px;
+                position: relative;
+                a{
+                    display: inline-block;
+                    color: @color3;
+                }
+                //联系客服
+                #service{
+                    display: inline-block;                   
+                    margin-right: -10px;
+                    height: 29px;
+                    position: relative;
+                    padding: 0 10px;
+                    border-left: 1px solid @color1;
+                    border-right: 1px solid @color1;
+                }
+                #serviceCall{
+                    width: 90px;
+                    height: 30px;
+                    line-height: 30px;
+                    border: 1px solid @color2;
+                    border-top: 1px solid white;
+                    position: absolute;
+                    top:29px;
+                    right: -10px;
+                    padding: 3px 5px;
+                    text-align: center;
+                    display:none;
+                    background: white;
+                    z-index: 10;
+                }      
+            }
+        }
+        
+        //hover效果
+        
+         #topRight a:hover{
+            color: @color5;
+            display: block;
+        }
+        #topRight li:hover #buyerCenter{
+            text-decoration: none;
+            border-left: 1px solid @color2;
+            border-right: 1px solid @color2;
+            background: white;
+        }        
+         #topRight li:hover #focus{
+             background: white;
+            color: @color5;
+            display:block;            
+        }
+        #focus a{text-decoration: none;}
+        #focus a:hover #focusShopsNum{
+            color: @color5;
+        }
+         #focus a:hover #focusGoodsNum{
+            color: @color5;
+        }
+        #topRight li:hover #service{
+            border-left: 1px solid @color2;
+            border-right: 1px solid @color2;
+            background: white;
+            display: block;
+        }
+        #topRight li:hover #serviceCall{
+            display: block;
+        }
+//     
+        //顶部右侧区结束
+    }
+}
+//顶部区结束*******************
+
+//顶部搜索区开始*******************
+#topHead{
+    width: 1200px;
+    height: 92px;
+    margin: 0 auto;
+    margin-top: 25px;
+    position: relative;
+    #searchFatherBox{
+        width: 1200px;
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+        font-size:@Size2; 
+        overflow: hidden;
+        z-index: 1;
+        .searchLogo{
+            width: 180px;
+            height: 50px;
+            margin-top: 5px;
+            margin-right: 10px;
+            float: left;
+        }
+        .searchName{
+            width: 165px;
+            height: 50px;
+            margin-top: 5px;
+            margin-left: 10px;
+            text-align: right;
+            line-height: 50px;
+            border-left: 1px solid @color2;
+            font-size: @color2;
+            color: @color3;
+            float: left;
+        }
+        //搜索框
+        #searchBox{
+            width: 536px;
+            height: 32px;
+            position: relative;
+            margin: 14px 250px 14px 410px;
+            border: 2px solid @color5;
+            //搜索框输入区
+            .searchContent{            
+                width: 446px;
+                height: 32px;
+                border: none;
+                position: absolute;
+                top: 0px;
+                left: 4px;
+                font-size: @Size2;
+                line-height: 32px;
+                color: @color3;
+                background: white;
+            }
+            //搜索框按钮
+            .searchBtn{
+                width: 87px;
+                height: 32px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: 2px solid @color5;
+                text-align: center;
+                line-height: 28px;
+                font-family: "微软雅黑";
+                font-size: @Size4;
+                color: white;
+                background: @color5;
+                cursor: pointer;
+            }
+        }
+        
+        //商城承诺
+        .searchBoxImg{
+            width: 180px;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            img{
+                width: 180px;
+                height: 60px;
+                text-align: center;
+            }
+        }
+    }
+    //热门搜索
+    .searcHot{
+        display: block;
+        height: 25px;
+        position: absolute;
+        top: 55px;
+        left: 395px;
+        line-height: 25px;
+        font-size: @Size1;
+        a{
+            display: block;
+            padding-left: 15px;
+            float: left;
+            color: @color3;
+            &:hover{color: @color6;}
+        }
+        
+    }
+}
+//顶部搜索区结束*******************
+
+//商品分类区开始*******************
+#bannerFatherBox{
+    width: 1200px;
+    height: 34px;
+    margin: 0 auto;
+    position:relative;
+//  background: greenyellow;
+    //左侧区
+    .bannerLeft{
+        width: 200px;
+        height: 34px;
+        margin: 0 0;
+        text-align: center;
+        line-height: 34px;
+        font-size: @Size3;
+        font-family: "Microsoft YaHei";
+        color: white;
+        background: @color5;
+        float: left;
+    }
+     //右侧区
+    .bannerRight{
+        display: block;
+        width: 1000px;
+        height: 32px;
+        margin: 0 0;
+        position: relative;
+        text-align: center;
+        line-height: 32px;
+        font-size: @Size3;
+        font-family: "Microsoft YaHei";
+        border-bottom: 2px solid @color5;
+        float: left;        
+        li{
+            float: left;
+            padding: 0 11px;
+            a{color: @color7;}
+            a:hover{
+                color: @color6;
+                text-decoration: none;
+            }
+        } 
+        .bannerHot{
+            position: absolute;
+            height: 32px;
+            right: 0;
+            color: @color6;  
+        }
+    }
+}
+//商品分类区结束*******************
+
+//菜单栏、轮播图分类区开始*******************
+#menuFatherBox{
+    width: 1200px;
+    height: 410px;
+    margin: 0 auto;
+    position: relative;
+    //左侧菜单
+    .menuLeftBox{
+        width: 200px;
+        height: 410px;
+        position: relative;
+        margin: 0 0;
+        background: @color8;
+        float: left;
+        //分类菜单
+        .menuLeftList{
+            display: block;
+            width: 200px;
+            margin: 0 0;
+            li{
+//              width: 199px;
+                width: 154px;
+                height: 38px;
+//              text-align: left;
+                padding-left: 45px;
+                line-height: 38px;
+                font-family: "微软雅黑";
+                font-size: @Size3;
+                font-weight: 200;
+                color: white;
+                border-top: 1px solid @color9;
+                border-left: 1px solid @color9;
+                &:hover{
+                    background: white;
+                    color: @color9;
+                }
+                i{ 
+                   color: @color10;
+                   font-size: 17px;
+                   line-height: 18px;
+                   padding: 14px 10px 0 12px;
+                }
+                a{
+                   font-size: @Size2;
+                   font-family: "微软雅黑";
+                   font-weight: bold;
+                   color: white;
+                   &:hover{text-decoration: none;}
+                }
+                //二级菜单栏
+                .menuListSon{
+                    width: 751px;
+                    height: 410px;
+                    position: absolute;
+                    top: 0px;
+                    left: 200px;                    
+                    background: rgba(255,255,255,0.96);
+                    border-bottom: 1 solid @color8;
+                    border-right: 1 solid @color8;
+                    z-index: 10;
+                    display: none;
+                    //分类列表盒子
+                    dl{
+                        display: block;
+                        width: 690px;
+                        position: relative;
+                        margin: 0 30.5px;
+                        padding: 15px 0 20px 0px;
+                        font-size: @Size2;
+                        font-family:  "微软雅黑";
+                        color: @color7;
+                        line-height: 26px;
+                        border-bottom: 1px solid @color2;
+                        dt{
+                            display: inline-block;
+                            width: 64px;
+                            position: absolute;
+                            top: 15px;
+                            left: 0;
+                            text-align: center;
+                            font-weight: bold;
+                            a{
+                                font-weight: bold;
+                                font-size: @Size2;
+                                color: @color7;
+                                &:hover{
+                                    color: @color6;
+                                    border-bottom: 1px solid @color6;
+                                }
+                            }
+                        }
+                        dd{
+                            margin: 0;
+                            padding: 0;
+                            p{
+                                width: 622px;
+                                margin: 0 70px;
+                                padding: 0 0;
+                                a{
+                                    margin: 0 12px;
+                                    margin-left: 6px;
+                                    font-weight: normal;
+                                    font-size: @Size2;
+                                    color: @color7;
+                                    &:hover{
+                                        color: @color6;
+                                        border-bottom: 1px solid @color6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    dl:nth-child(1){margin-top:35px;}
+                }
+            }
+        }
+        .menuLeftList li:hover a{color: @color9;}
+        .menuLeftList li:hover .menuListSon{display: block}
+        //每天限时抢新
+        .menuLeftAdd{
+            width: 200px;
+            height: 70px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background:url(../images/ChMkJ1Z7xxmIJIRaAAAVx_5H8MsAAGjZwDgKK0AABXf118.gif) no-repeat center center;
+            background-size: 100% 100%;
+        }
+    }
+    //轮播图区
+    #menuCenterBox{
+        width: 740px;
+        height: 400px;
+        position: relative;
+        margin: 10px 10px 0 10px;
+        float: left;
+        z-index: 5;
+        // 图片部分
+        a{
+            width: 740px;
+            height: 400px;
+            position: absolute;
+            left: 0px;top: 0px;
+            display: none;
+            img{
+                width: 740px;
+                height: 400px;
+                margin: 0;
+            }
+            &.active{
+               display: block;
+            }
+        }
+        ul{
+            width: 180px;
+            height: 20px;
+            position: absolute;
+            bottom: 10px;left: 280px;
+            li{
+                width: 20px;height: 20px;
+                border-radius: 50%;
+                float: left;
+                list-style: none;
+                background: #3E3E3E;
+                color: white;
+                text-align: center;
+                line-height: 20px;
+                font-size: 14px;
+                margin-right: 5px;
+                margin-left: 5px;
+                cursor: pointer;
+            }
+            li:nth-child(1){
+                background: #B61B1F;
+            }
+        }
+        // 左右点击部分
+        #CenterBoxClick{
+            width: 740px;height: 64px;
+            position: absolute;
+            left: 0px;top: 168px;
+            display: none;
+            .CenterBoxClick_left,.CenterBoxClick_right{
+                width: 35px;
+                height: 64px;
+                float: left;
+                background: rgba(0,0,0,0.2);
+                text-align: center;
+                line-height: 64px;
+                color: white;
+                font-family: "simsun";
+                font-size: 46px;
+                cursor: pointer;
+            }
+            .CenterBoxClick_right{          
+                float: right;
+            }
+        }
+    }
+    //轮播图区结束
+    
+    //右侧区
+    .menurRightBox{
+        width: 240px;
+        height: 410px;
+        position: relative;
+        margin: 0 0;
+        float: right;
+        //右侧商城服务保障区
+        .menurRightBox1{
+            width: 240px;
+            height: 210px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../images/baozhang20160320.jpg) no-repeat center center;
+        }
+        //商城公告
+        .menurRightBox2{
+            width: 238px;
+            height: 180px;
+            border: 1px solid @color2;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-family: "微软雅黑";
+            text-align: left;
+            .storeNotice{
+                width: 198px;
+                height: 22px;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                font-size: @Size2;
+                line-height: 22px;
+                a{
+                    text-decoration: none;
+                    color: @color7;
+                }
+                ul{
+                    display: block;
+                    width: 198px;
+                    position: relative;
+                    margin-top:0;
+                    font-size: @Size1;
+                    margin-left: 0px;
+                    li{
+                        height: 24px;
+                        line-height: 24px;
+                        text-align: left;
+                        color: @color3;
+                    }
+                    li:first-child a{color: @color6;}
+                    li:nth-child(3) a{color: @color6;}
+                    
+                }
+            }
+        }
+    }
+}
+//菜单栏、轮播图分类区结束*******************
+
+//精品团购区开始*******************
+#jptgTitle{
+    width: 1200px;
+    height: 46px;
+    margin: 10px auto;
+    line-height: 46px;
+    text-align: left;
+    font-family: "微软雅黑";
+    font-size: @Size9;
+    color: @color7;
+}
+#jptgImg{
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+    border: 1px solid @color2;
+//  overflow: hidden;
+    li{
+        display: block;
+        width: 300px;
+        height: 180px;
+        float: left;
+        overflow: hidden;
+        img{
+            width: 300px;
+            height: 180px;
+        }
+        &:hover{
+            width: 299px;
+            margin-left: -1px;
+            border-left: 1px solid @color2;
+            border-right: 1px solid @color2;
+            border-bottom: 2px solid @color6;
+            border-top: none;            
+        } 
+    } 
+    li:last-child{
+        float:right;
+        margin-right: -1px;
+    }   
+}
+
+//精品团购区结束*******************
+
+//特色购区开始*******************
+#tsgTitle{
+    width: 1200px;
+    height: 46px;
+    margin: 10px auto;
+    text-align: left;
+    line-height: 46px;
+    font-family: "微软雅黑";
+    font-size: @Size9;
+    color: @color7;
+}
+#tsgImgBox{
+    display: block;
+    width: 1198px;
+    height: 370px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid @color2;
+    li{float: left;}
+    .tsgImgA{
+        width: 200px;
+        height: 370px;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        overflow: hidden;
+        img{
+            width: 200px;
+            height: 370px;
+            text-align: center;
+        }
+    }
+    .tsgImgB{
+        width: 369px;
+        height: 217px;
+        border: 1px solid @color2;
+        border-top: none;
+        position: absolute;        
+        top: 0px;
+        left: 199px;
+        overflow: hidden;
+        img{
+            width: 369px;
+            height: 217px;
+            text-align: center;
+        }
+    }
+    .tsgImgC{
+        width: 209px;
+        height: 217px;
+        border: 1px solid @color2;
+        border-top: none;
+        position: absolute;        
+        top: 0px;
+        left: 569px;
+        overflow: hidden;
+        img{
+            width: 209px;
+            height: 217px;
+            text-align: center;
+        }
+    }
+    .tsgImgD{
+        width: 210px;
+        height: 217px;
+        border: 1px solid @color2;
+        border-top: none;
+        position: absolute;        
+        top: 0px;
+        left: 777px;
+        overflow: hidden;
+        img{
+            width: 210px;
+            height: 217px;
+            text-align: center;
+        }
+    }
+    .tsgImgE{
+        width: 209px;
+        height: 217px;
+        border: 1px solid @color2;
+        border-top: none;
+        border-left: none;
+        position: absolute;        
+        top: 0px;
+        right: -1px;
+        overflow: hidden;
+        img{
+            width: 209px;
+            height: 217px;
+            text-align: center;
+        }
+    }
+    .tsgImgF{
+        width: 369px;
+        height: 152px;
+        border: 1px solid @color2;
+        border-top: none;
+        border-bottom: none;
+        position: absolute; 
+        top: 218px;
+        left: 199px;
+        overflow: hidden;
+        img{
+            width: 369px;
+            height: 152px;
+            text-align: center;
+        }
+    }
+    .tsgImgG{
+        width: 207px;
+        height: 152px;
+        border: 1px solid @color2;
+        border-top: none;
+        border-bottom: none;
+        position: absolute;        
+        top: 218px;
+        left: 569px;
+        overflow: hidden;
+        img{
+            width: 207px;
+            height: 152px;
+            text-align: center;
+        }
+    }
+    .tsgImgH{
+        width: 210px;
+        height: 152px;
+        border: 1px solid @color2;
+        border-top: none;
+        border-bottom: none;
+        position: absolute;        
+        top: 218px;
+        left: 777px;
+        overflow: hidden;
+        img{
+            width: 211px;
+            height: 152px;
+            text-align: center;
+        }
+    }
+    .tsgImgI{
+        width: 209px;
+        height: 152px;
+        border: 1px solid @color2;
+        border-top: none;
+        border-bottom: none;
+        position: absolute;        
+        top: 218px;
+        right: -1px;
+        overflow: hidden;
+        img{
+            width: 209px;
+            height: 152px;
+            text-align: center;
+        }
+    }
+    
+}
+//特色购区结束*******************
+
+//1F手机通讯区开始*******************
+#sjtxTitle{
+    width: 1200px;
+    height: 46px;
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: left;
+    line-height: 46px;
+    font-family: "微软雅黑";
+    font-size: @Size9;
+    color: @color7;
+}
+#sjtxBox{
+    width: 1200px;
+    height: 418px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid @color2;
+    overflow: hidden;
+    .sjtxImgA{
+        width: 359px;
+        height: 420px;
+        border-right: 1px solid @color2;
+        position: relative;
+        left:-1px;
+        top: -1px;
+        float: left;
+        overflow: hidden;
+        img{
+            width: 359px;
+            height: 420px;
+            text-align: center;
+        }
+    }
+    //轮播图盒子
+    .sjtxImgB{
+        width: 420px;
+        height: 209px;
+        position: relative;
+        margin-top: -1px;
+        margin-left: 0px;
+        border: 1px solid @color2;
+        border-left: none;
+        border-right: none;
+        float: left;
+        overflow: hidden;
+        img{
+            width: 420px;
+            height: 209px;
+            text-align: center;
+        }
+    }
+    .sjtxImgC{
+        width: 209px;
+        height: 209px;
+        position: relative;
+        margin-top: -1px;
+        margin-left: 0px;
+        border: 1px solid @color2;
+        border-right: none;
+        font-size: @Size2;
+        font-family: "微软雅黑";
+        line-height: 20px;
+        text-align: left;
+        float: left;
+        overflow: hidden;        
+        .sjtxImgC1,.sjtxImgC2{
+            width: 160px;
+            height: 20px;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 16px;                     
+            a{
+                color: @color7;
+                text-decoration: none;
+                &:hover{color: @color5;}
+            }
+        }
+        .sjtxImgC2{
+            margin: 0 auto;
+            color: @color6;
+        }
+        .sjtxImgC3{
+            width: 160px;
+            height: 120px;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 16px; 
+            
+            img{
+                width: 160px;
+                height: 120px;
+                text-align: center;
+            }            
+        }
+        &:hover .sjtxImgC3{margin-top: 5px;}
+    }
+    .ImgC3{
+        width: 211px;
+        position: relative;
+        margin-top: -1px;
+        margin-left: -1px;
+        border: 1px solid @color2;
+        border-left: none;
+        border-right: none;
+    }
+
+}
+#pinPai{
+    width: 1200px;
+    height: 66px;
+    margin: 0 auto;
+    margin-top: -1px;
+    position: relative;
+    border: 1px solid @color2;
+    overflow: hidden;
+    li{
+        width: 118px;
+        height: 60px;
+        display: block;
+        margin:0px auto;
+        padding: 3px 1px;
+        float: left;
+        img{
+            width: 118px;
+            height: 60px;
+            text-align: center;
+        } 
+        &:hover{
+            width: 117px;
+            margin-left: -1px;
+            border-left: 1px solid @color2;
+            border-right: 1px solid @color2;
+        }
+    }
+    li:last-child{
+        float:right;
+        margin-right: -1px;
+    }
+}
+//1F手机通讯区结束*******************
+
+#tuAadd{
+    width: 1200px;
+    height: 90px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+//尾部************************
+#endFatherBox{
+    width: 100%;
+    border-top: 1 solid @color2;
+    background: @color8;
+    #endBox{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 10px 0;
+        position: relative;
+        font-family: "微软雅黑";
+        font-size: @Size1; 
+         color: @color3;
+        .endFoot{
+            width: 1200px;
+            line-height: 20px;
+            margin: 0px auto;
+            padding: 10px 0 ;
+            span{ 
+                display: block;
+                float: left;
+                margin-right: 10px;
+            }
+            a{
+               margin: 0;
+               padding: 0 10px;
+               color: @color3;
+              &:hover{
+                cursor: default;
+                text-decoration: none;
+              }
+            }
+        }
+        .endFootFirst{
+            color: white;
+            a{              
+                color: white;
+                &:hover{cursor: pointer;}
+            }
+        }
+    }
+}
+//尾部结束************************
+
+//右侧栏开始***************
+#rightFatherBox{
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 37px;
+    height: 100%;
+    background: #2d2d2d;
+    z-index: 1000;
+    color: white;
+    #rightBoxA{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin: -250px 0 0;
+        width: 37px;
+        height: 266px;        
+//      background: red;
+        //我的订单
+        .myOrder{
+            position: relative;
+            margin: 0 0 12px;
+            width: 37px;
+            height: 35px;
+            cursor: pointer;
+            background:url(../images/bar_ico.png) no-repeat 0px 0px;
+        }
+        //我的足迹
+        .myFootprint{
+            position: relative;
+            margin: 0 0 12px;
+            width: 37px;
+            height: 37px;
+            cursor: pointer;
+            background:url(../images/bar_ico.png) no-repeat 0px -74px;
+        }
+        //购物车
+        .ShoppingCart{
+            position: relative;
+            margin: 0 0 12px;
+            width: 37px;
+            height: 37px;
+            cursor: pointer;
+            background:url(../images/bar_ico.png) no-repeat 0px -111px;
+            span{
+                position: absolute;
+                top: -4px;
+                right: 5px;
+                padding: 1px 4px 0;
+                height: 14px;
+                font-size: @Size1;
+                line-height: 12px;
+                background: #f33;
+                border-radius: 50%;
+                color: white;
+            }
+            &:hover span{background: white; color: #f33;}
+        }
+        .tipsHover{
+                position: absolute;
+                top: 0;
+                right: 0px;
+                width: 74px;
+                height: 37px;
+                background: red;
+                display: none;
+                z-index: -1;
+                a{
+                   display: block;
+                   margin-left: 5px;
+                   color: white;
+                   font-size: @Size1;
+                   text-align: center;
+                   line-height: 37px; 
+                }
+            }
+            .rightTips:hover{background-color: red;}
+            .rightTips:hover .tipsHover{
+                display: block;
+                right: 37px;
+            }
+    }
+    //返回顶部
+     #rightBoxB{
+        position: absolute;
+        width: 37px;
+        height: 37px;
+        bottom: 0;
+        right: 0;
+        background: url(../images/bar_ico.png) no-repeat 0px -185px;
+        &:hover{background-color: #f33;}
+        .returnTop{
+            width: 37px;
+            height: 37px;
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: @Size2;
+            text-align: center;
+            line-height: 20px;           
+        }
+    }
+}
+//右侧栏结束************

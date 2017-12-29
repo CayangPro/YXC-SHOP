@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #CC0000;
+  text-decoration: underline;
+}
+li {
+  list-style: none;
+}
+#headBox {
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+#headBox #leftHeadBox {
+  width: 377px;
+  height: 40px;
+  margin-top: 30px;
+  float: left;
+}
+#headBox #leftHeadBox a {
+  display: block;
+  float: left;
+  height: 40px;
+}
+#headBox #rightHeadBox {
+  display: block;
+  margin-top: 30px;
+  float: right;
+  margin-right: 0px;
+}
+#headBox #rightHeadBox li {
+  display: block;
+  width: 90px;
+  height: 36px;
+  float: left;
+  text-align: center;
+  line-height: 36px;
+  font-size: 14px;
+  padding: 0 14px 0 0;
+  background: url("../images/step-bg.png") no-repeat 90px -74px;
+  background-color: #e6e6e6;
+}
+#headBox #rightHeadBox .s5 {
+  background: #e6e6e6;
+}
+#headBox #rightHeadBox .s1 {
+  background: url("../images/step-bg.png") no-repeat 90px -148px;
+  background-color: #FFCCCC;
+  color: #CC0000;
+}
+#headBox #rightHeadBox .s2 {
+  background: url("../images/step-bg.png") no-repeat 90px 0;
+  background-color: #FFCCCC;
+  color: #CC0000;
+}
+#headBox #rightHeadBox .s3 {
+  background: url("../images/step-bg.png") no-repeat 90px -37px;
+  background-color: #E02D2D;
+  color: white;
+}
+#wrapper {
+  width: 960px;
+  margin: 20px auto;
+  margin-bottom: 60px;
+  border: 1px solid #E6E6E6;
+  overflow: hidden;
+}
+#wrapper .infoFatherBox {
+  width: 960px;
+  margin: -1px;
+  border: 1px solid #E6E6E6;
+  background: #F5F5F5;
+  position: relative;
+  overflow: hidden;
+}
+#wrapper .infoFatherBox .orderInfoBox {
+  width: 780px;
+  float: left;
+  margin: 5px 16px 5px 27px;
+  overflow: hidden;
+}
+#wrapper .infoFatherBox .orderInfoBox .orderMoney {
+  height: 26px;
+  position: relative;
+  margin-right: 0;
+  font-size: 14px;
+  text-align: right;
+  color: #666666;
+  line-height: 26px;
+  margin: 11px 0;
+}
+#wrapper .infoFatherBox .orderInfoBox .orderMoney p {
+  display: block;
+  float: left;
+  margin: 0;
+  line-height: 26px;
+  font-size: 18px;
+}
+#wrapper .infoFatherBox .orderInfoBox .orderMoney p e {
+  color: #CC0000;
+}
+#wrapper .infoFatherBox .orderInfoBox .orderMoney span {
+  margin: 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #CC0000;
+}
+#wrapper .infoFatherBox .orderInfoBox p {
+  display: block;
+  height: 26px;
+  margin: 0;
+  line-height: 26px;
+  font-size: 14px;
+  color: #666666;
+}
+#wrapper .infoFatherBox .orderInfoBox .orderName {
+  width: 440px;
+  overflow: hidden;
+}
+#wrapper .infoFatherBox .orderErWei {
+  width: 111px;
+  height: 152px;
+  float: left;
+  margin: 5px 0 5px 0;
+  background: white;
+}
+#wrapper .infoFatherBox .orderErWei img {
+  display: block;
+  margin: 5px;
+  width: 101px;
+  height: 101px;
+}
+#wrapper .infoFatherBox .orderErWei span {
+  display: block;
+  width: 101px;
+  height: 12px;
+  margin-left: 20px;
+  margin-top: 15px;
+  background: url(../images/index.png) no-repeat 0 2px;
+}
+#wrapper .payChoose {
+  height: 66px;
+  width: 920px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-bottom: 1px solid #E6E6E6;
+}
+#wrapper .payChoose .payNum {
+  height: 44px;
+  width: 175px;
+  float: left;
+  margin: 11px 0;
+  font-size: 16px;
+  color: #666666;
+  line-height: 42px;
+  text-align: right;
+}
+#wrapper .payChoose .payNum span {
+  display: block;
+  float: left;
+  width: 22px;
+  height: 22px;
+  margin: 10px 5px 11px 10px;
+  border: 1px solid #E6E6E6;
+  cursor: pointer;
+}
+#wrapper .payChoose .payNum .iclick {
+  background: url(../images/index.png) no-repeat 0 -50px;
+}
+#wrapper .payChoose .payNum .nclick {
+  background: url(../images/index.png) no-repeat 0 -79px;
+}
+#wrapper .payChoose .zfpayNum {
+  height: 42px;
+  width: 138px;
+  float: left;
+  margin: 11px 10px;
+  border: 1px solid #CC0000;
+  background: white;
+  text-align: center;
+}
+#wrapper .payChoose .zfpayNum img {
+  height: 38px;
+  width: 138px;
+  margin: 2px 0;
+}
+#wrapper .payChoose .paytotal {
+  height: 44px;
+  float: right;
+  margin: 11px 10px;
+  text-align: right;
+  line-height: 44px;
+  font-size: 16px;
+  color: #666666;
+  background: white;
+  text-align: center;
+}
+#wrapper .payChoose .paytotal span {
+  font-size: 20px;
+  color: #CC0000;
+}
+#wrapper .payNow {
+  width: 920px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-bottom: 1px solid #E6E6E6;
+}
+#wrapper .payNow .payNowNum {
+  width: 162px;
+  height: 44px;
+  margin: 0 10px;
+  font-size: 20px;
+  color: white;
+  line-height: 44px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #CC0000;
+  display: block;
+}
+#wrapper .payNow .payNowNum:hover {
+  background-color: #B90000;
+}
+#wrapper .payNow .notice {
+  width: 900px;
+  height: 30px;
+  margin: 15px 0 30px 10px;
+  font-size: 13px;
+  color: #FF6600;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #FFCC7D;
+  background: url(../images/mark.png) no-repeat 10px 9.5px;
+  background-color: #FFFDEA;
+}
+#wrapper .problemBox {
+  width: 920px;
+  margin: 30px auto;
+}
+#wrapper .problemBox .pb1 {
+  width: 910px;
+  margin: 0 0 20px 10px;
+  font-size: 16px;
+  color: #333;
+}
+#wrapper .problemBox .pb2 {
+  width: 910px;
+  margin: 20px 0 0 10px;
+  font-size: 14px;
+  color: #333;
+}
+#wrapper .problemBox .pb3 {
+  width: 910px;
+  margin: 5px 0 0 10px;
+  font-size: 12px;
+  color: #666666;
+}
+/*# sourceMappingURL=pay.css.map */

@@ -1,0 +1,97 @@
+//颜色
+@color1: #F5F5F5; //顶部背景灰色
+@color2: #E6E6E6; //顶部下边框深灰色
+@color3: #666666; //字体深灰色
+@color4: #3366CC; //蓝色字体
+@color5: #CC0000; //hover效果朱红色
+@color6: #FF335A; //订单数量红色
+@color7: #333; //字体黑色
+@color8: #2D2D2D; //左侧菜单栏背景色
+@color9: #3D3D3D; //左侧菜单栏边框色
+@color10: #ababab;//网络字体颜色
+
+//字体大小
+@Size1: 12px;
+@Size2: 14px;
+@Size3: 16px;
+@Size4: 18px;
+@Size5: 20px;
+@Size9: 25px;
+
+
+*{ margin: 0;padding: 0; }
+
+a{text-decoration: none;}
+a:hover{
+    color: @color5;
+    text-decoration: underline;
+}
+
+li{list-style: none;}
+
+//head区域开始
+#headBox{
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    #leftHeadBox{
+        width: 377px;
+        height: 40px;
+        margin-top: 30px;
+        float: left;
+        a{
+            display: block;
+            float: left;
+            height: 40px;
+        }
+    }
+    #rightHeadBox{
+        display: block;
+        margin-top: 30px;
+        float: right;
+        margin-right: 0px;
+        li{
+            display: block;
+            width: 90px;
+            height: 36px;
+            float: left;
+            text-align: center;
+            line-height: 36px;
+            font-size: @Size2;
+            padding: 0 14px 0 0;
+            background: url("../images/step-bg.png") no-repeat 90px -74px;
+            background-color: #e6e6e6;
+        }
+        li:nth-child(4){background: #e6e6e6;}
+    }
+}
+//head区域结束
+
+//详情区开始
+#wrapper{
+    width: 960px;
+    height: 300px;
+    margin: 20px auto;
+    position: relative;
+    margin-bottom: 20px;
+    //空购物车样式区开始
+    dl{
+        height: 145px;
+        padding: 50px 0 6px 169px;
+        font-size: @Size2;
+        font-weight: bold;
+        color: @color3;
+        line-height: 20px;
+        dt{margin-top: 10px;}
+        background: url(../images/shopcar.png) no-repeat 60px 45px;
+        a{
+            line-height: 24px;
+            font-weight: normal;
+            color: @color4;
+        }
+    }
+    //空购物车样式区开始
+}
+//详情区结束

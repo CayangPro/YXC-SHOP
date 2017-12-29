@@ -1,0 +1,406 @@
+//颜色
+@color1: #F5F5F5; //顶部背景灰色
+@color2: #E6E6E6; //顶部下边框深灰色
+@color3: #666666; //字体深灰色
+@color4: #3366CC; //蓝色字体
+@color5: #CC0000; //hover效果朱红色
+@color6: #FF335A; //订单数量红色
+@color7: #333; //字体黑色
+@color8: #2D2D2D; //左侧菜单栏背景色
+@color9: #3D3D3D; //左侧菜单栏边框色
+@color10: #ababab;//网络字体颜色
+
+//字体大小
+@Size1: 12px;
+@Size2: 14px;
+@Size3: 16px;
+@Size4: 18px;
+@Size5: 20px;
+@Size9: 25px;
+@Size10: 30x;
+
+*{ margin: 0;padding: 0; }
+
+a{text-decoration: none;}
+a:hover{
+    color: @color5;
+    text-decoration: underline;
+}
+
+
+li{list-style: none;}
+body{background-color: @color1;}
+.shadow{box-shadow: 1px 1px 5px @color3;}
+
+
+//详情区开始
+#wrapper{
+    width: 1110px;
+    margin: 20px auto;
+    padding: 10px 0;
+    overflow: hidden;
+    //左侧导航区开始
+    #navLeftBox{
+        display: block;
+        width: 150px;
+        height: 330px;
+        margin: 0 0 0 5px;
+        float: left;
+        background: white;
+        //订单中心
+        li{
+            display: block;
+            float: left;
+            width: 132x;
+            margin: 0;
+            float: right;
+            .opc{
+                width: 132px;
+                height: 30px;
+                margin: 10px 0 0 0;
+                color: @color7;
+                display: block;
+                position: relative;
+                padding-left: 20px;
+                font-size: @Size3;
+                text-align: left;
+                line-height: 30px;
+                i{
+                    display: block;
+                    float: left;
+                    width: 15px;
+                    height: 18px;
+                    margin: 6px 8px;
+                    margin-left: 0;
+                    background: url(../images/allbgs.png) no-repeat 0 -142px;
+                }
+            }
+            .apc{
+                width: 107px;
+                height: 26px;
+                margin: 0 0 0 24px;
+                color: @color3;
+                display: block;
+                position: relative;
+                padding-left: 20px;
+                font-size: @Size2;
+                text-align: left;
+                line-height: 26px;
+                cursor: pointer;
+                &:hover{color: @color5;}
+            }
+        }
+        .personalSet{
+            p{
+              i{
+                   background: url(../images/allbgs.png) no-repeat 0 -89px; 
+                }  
+            }
+        }
+        
+    }
+    
+    //右侧导航区开始
+    #navRightBox{
+        width: 935px;
+        margin: 0 5px 0 0;
+        float: right;
+        position: relative;
+        background: white;
+        padding-bottom: 20px;
+        box-shadow: 1px 1px 5px @color3;
+        //标题
+        #nrTitle{
+            display: block;
+            width: 903px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 2px;
+            border-bottom: 2px solid @color2;
+            li{
+                display: block;
+                width: 112px;
+                height: 50px;
+                margin: 0;
+                margin-bottom: -2px;
+                text-align: center;
+                line-height: 50px;
+                font-size: @Size4;
+                color: @color5;
+                border-bottom: 2px solid @color5;
+            }
+        }
+        //图标区
+        #nrImgs{
+            display: block;
+            width: 903px;
+            height: 84px;
+            margin: 42px 16px 36px 16px; 
+            li{
+                display: block;
+                float: left;
+                font-size: 12px;
+                line-height: 18px; 
+                margin: 0 50px;
+                a{
+                    display: block;
+                    width: 77px;
+                    height: 84px;
+                    color: @color7;
+                    margin: 0;
+                    text-align: center;
+                    position: relative;
+                }
+            }
+            .daiFuK,.daiFaH,.daiSaH,.daiPingJ{
+                a{
+                    cursor: default;
+                    i{
+                        display: block;
+                        width: 56px;
+                        height: 53px;
+                        position: relative;
+                        margin: 0;
+                        margin-left: 10px;
+                        background: url(../images/allbgs.png) no-repeat 0 -543px;
+                    }
+                    span{
+                        display: block;
+                        width: 84px;
+                        height: 17px;
+                        position: absolute;
+                        bottom: 5px;
+                        left: -12px;
+                        font-size: @Size1;
+                        line-height: 17px;
+                        text-align: center;
+                        e{
+                            display: block;
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 50%;
+                            position: absolute;
+                            bottom: 1px;
+                            right: 0;
+                            font-size: @Size1;
+                            line-height: 16px;
+                            font-size: @Size1;
+                            text-align: center;
+                            color: white;
+                            background-color: @color5;
+                        }
+                    }
+                    
+                }
+            }
+            .daiFuK a:hover{
+                span{text-decoration: underline; color: @color5;}
+                i{background: url(../images/allbgs.png) no-repeat 0 -656px;}
+            }
+            .daiFaH{
+                a{                    
+                    i{
+                        width: 56px;
+                        height: 45px;
+                        top: 8px;
+                        background: url(../images/allbgs.png) no-repeat 3px -287px;
+                    }
+                    &:hover{
+                        span{text-decoration: underline; color: @color5;}
+                        i{background: url(../images/allbgs.png) no-repeat 3px -336px;}
+                    }
+                }
+            }
+            .daiSaH{
+                a{                    
+                    i{
+                        width: 59px;
+                        height: 45px;
+                        top: 8px;
+                        background: url(../images/allbgs.png) no-repeat 0 -241px;
+                    }
+                    &:hover{
+                        span{text-decoration: underline; color: @color5;}
+                        i{background: url(../images/allbgs.png) no-repeat 0 -199px;}
+                    }
+                }
+            }
+            
+            .daiPingJ{
+                a{                    
+                    i{
+                        width: 52px;
+                        height: 49px;
+                        top: 8px;
+                        background: url(../images/allbgs.png) no-repeat 7px -385px;
+                    }
+                    &:hover{
+                        span{text-decoration: underline; color: @color5;}
+                        i{background: url(../images/allbgs.png) no-repeat 7px -437px;}
+                    }
+                }
+            }
+        }
+        //表头
+        #navTable{
+            display: block;
+            width: 901px;
+            height: 40px;
+            margin: 0 16px 0 16px; 
+            background-color: @color1;
+            font-size: @Size3;
+            color: @color7;
+            border: 1px solid @color2;
+            li{
+                display: block;
+                height: 40px;
+                float: left;
+                margin: 0;
+                line-height: 40px;
+                text-align: center;
+            }
+            .cell1{
+                width: 272px;
+                height: 40px;  
+                text-align: left;
+                padding-left: 20px;
+            }
+            .cell2{ width: 108px; }
+            .cell3{ width: 50px; }
+            .cell4{ width: 106px; }
+            .cell5{ width: 124px; }
+            .cell6{ width: 116px; }
+            .cell7{ width: 105px; }
+        }
+        
+        //订单信息
+        #OrderInfo{
+            width: 903px;
+            height: 40px;
+            margin: 0 auto; 
+            margin-top: 15px;
+            background-color: @color1;
+            border: 1px solid @color2;
+            font-size: @Size3;
+            color: @color7;
+            p{
+                display: block;
+                height: 40px;
+                float: left;
+                margin: 0;
+                line-height: 40px;
+                text-align: center;  
+            }
+            #orderNumber{
+                width: 220px;
+                text-align: left;
+                padding-left: 20px;
+            }
+            #orderTime{
+                margin-left: 20px;
+            }
+        }
+        
+        //商品信息
+        #goodsInfo{
+            width: 905px;
+            margin: -1px 15px 10px 15px; 
+            background-color: white;
+            font-size: @Size2;
+            color: @color7;
+            border: none;
+            border-collapse: collapse;
+            tr{              
+                text-align: center;
+                border: 1px solid @color2;
+                .gdi1{
+                    .infoBox{
+                        width: 536px;
+                        margin: 0;
+                        text-align: left;
+                        padding-left: 20px;
+                        .goodsPic{
+                            display: block;
+                            float: left;
+                            width: 80px;
+                            height: 60px;
+                            float: left;
+                            border: 1px solid @color2;
+                            float: left;
+                            margin: 10px 5px 0 0px;
+                            img{
+                                display: block;
+                                width: 60px;
+                                height: 60px;
+                                margin: 0 10px;
+                            }
+                        }
+                        .goodsTitle{
+                            display: block;
+                            float: left;
+                            width: 180px;
+                            float: left;
+                            margin: 10px 0 0 5px;
+                            text-align: left;
+                            line-height: 18px;
+                            font-size: @Size2;
+                            color: @color4;
+                        }
+                        .gdi2{ 
+                            display: block;
+                            width: 108px; 
+                            margin-top: 10px;
+                            float: left;
+                            text-align: center;
+                        }
+                        .gdi3{ 
+                            display: block;
+                            width: 50px; 
+                            margin-top: 10px;
+                            float: left;
+                            text-align: center;
+                        }
+                        .gdi4{ 
+                            display: block;
+                            width: 106px; 
+                            margin-top: 10px;
+                            float: left;
+                            text-align: center;
+                        }
+                        .goodsKuai{
+                            display: block;
+                            width: 173px;
+                            margin: 5px 10px 20px 93px;
+                            text-align: left;
+                            line-height: 30px;
+                            font-size: @Size2;
+                            color: @color4;
+                        }
+                    }
+                }
+                .gdi5{ width: 123px; border-left: 1px solid @color2;}
+                .gdi6{ width: 115px; border-left: 1px solid @color2;}
+                .gdi7{ 
+                    width: 106px;
+                    height: 20px;                
+                    border-left: 1px solid @color2;
+                    a{color: @color4;}
+                }
+                .gdi5,.gdi6,.gdi7{
+                    p{
+                        display: block;
+                        height: 20px;
+                        margin: 10px auto;
+                    }
+                }
+            }
+                        
+        }
+                
+    }
+}
+
+//详情区结束
+
+
+

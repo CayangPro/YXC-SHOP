@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #CC0000;
+  text-decoration: underline;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+#bannerFatherBox {
+  width: 1200px;
+  height: 34px;
+  margin: 0 auto;
+  position: relative;
+}
+#bannerFatherBox .bannerLeft {
+  width: 200px;
+  height: 34px;
+  margin: 0 0;
+  text-align: center;
+  line-height: 34px;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: white;
+  background: #CC0000;
+  float: left;
+}
+#bannerFatherBox .bannerRight {
+  display: block;
+  width: 1000px;
+  height: 32px;
+  margin: 0 0;
+  position: relative;
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  border-bottom: 2px solid #CC0000;
+  float: left;
+}
+#bannerFatherBox .bannerRight li {
+  float: left;
+  padding: 0 11px;
+}
+#bannerFatherBox .bannerRight li a {
+  color: #333;
+}
+#bannerFatherBox .bannerRight li a:hover {
+  color: #FF335A;
+  text-decoration: none;
+}
+#bannerFatherBox .bannerRight .bannerHot {
+  position: absolute;
+  height: 32px;
+  right: 0;
+  color: #FF335A;
+}
+#ListhomeBOX {
+  display: block;
+  width: 1200px;
+  height: 26px;
+  margin: 10px auto;
+  position: relative;
+  line-height: 26px;
+}
+#ListhomeBOX .homeTotal {
+  width: 62px;
+  height: 26px;
+  position: absolute;
+  right: 0;
+  line-height: 26px;
+  text-align: center;
+  font-size: 14px;
+}
+#ListhomeBOX .homeTotal span {
+  color: #CC0000;
+}
+#ListhomeBOX li {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  margin: 0 6px 0 0;
+  text-align: center;
+  float: left;
+}
+#ListhomeBOX li a {
+  border: 1px solid #E6E6E6;
+  padding: 3px 10px;
+  font-size: 15px;
+  color: #666666;
+}
+#ListhomeBOX li a:hover {
+  color: #FF335A;
+  border-color: #FF335A;
+  text-decoration: none;
+}
+#screenBox {
+  width: 1200px;
+  height: 76px;
+  margin: 10px auto;
+  position: relative;
+  border: 2px solid #E6E6E6;
+  overflow: hidden;
+  z-index: 1;
+}
+#screenBox .screenBoxList {
+  width: 1200px;
+  position: relative;
+  margin: 0 0;
+  background: #F5F5F5;
+  border-right: 1px solid #E6E6E6;
+  float: left;
+}
+#screenBox .screenBoxList dl {
+  position: relative;
+  margin-top: -1px;
+  padding: 0 0 0 109px;
+  background: #f7f7f7;
+  overflow: hidden;
+}
+#screenBox .screenBoxList dl dt {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  padding: 0 15px 0 0;
+  width: 94px;
+  line-height: 38px;
+  font-size: 14px;
+  text-align: right;
+  color: #666;
+  overflow: hidden;
+}
+#screenBox .screenBoxList dl dd {
+  position: relative;
+  padding: 0 20px;
+  color: #999;
+  overflow: hidden;
+  border-left: 1px solid #e6e6e6;
+  background: #fff;
+}
+#screenBox .screenBoxList dl dd .listsInner {
+  position: relative;
+  margin-top: 0;
+  border-top: 1px solid #ebebeb;
+}
+#screenBox .screenBoxList dl dd .listsInner ul {
+  display: block;
+  height: 38px;
+  margin: 0;
+}
+#screenBox .screenBoxList dl dd .listsInner ul li {
+  padding: 0 20px 0 0;
+  background: #fff;
+  float: left;
+  text-align: left;
+}
+#screenBox .screenBoxList dl dd .listsInner ul li a {
+  position: relative;
+  display: block;
+  margin: 0 5px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #666666;
+}
+#screenBox .screenBoxList dl dd .listsInner ul li a:hover {
+  color: #FF335A;
+}
+#shadow {
+  width: 1204px;
+  height: 5px;
+  margin: 0 auto;
+  margin-top: -10px;
+  background: #F5F5F5;
+}
+.moreChoice {
+  width: 120px;
+  height: 26px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 22px;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  background: #F5F5F5;
+  color: #666666;
+  cursor: pointer;
+}
+#goodsNav {
+  width: 1200px;
+  height: 38px;
+  margin: 50px auto;
+  margin-bottom: 30px;
+  border: 1px solid #E6E6E6;
+  background: #F5F5F5;
+}
+#goodsNav #navLeftBOX {
+  width: 964px;
+  height: 38px;
+  position: relative;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  color: #666666;
+  line-height: 38px;
+  text-align: center;
+  margin: 0;
+}
+#goodsNav #navLeftBOX li {
+  float: left;
+  padding: 0 15px;
+}
+#goodsNav #navLeftBOX li a {
+  color: #666666;
+}
+#goodsNav #navLeftBOX li:nth-child(1) {
+  background: white;
+  border-right: 1px solid #E6E6E6;
+}
+#goodsNav #navLeftBOX li:nth-child(1) a {
+  color: #CC0000;
+}
+#goodsNav #navLeftBOX .navPrice {
+  width: 146px;
+  height: 68px;
+  border: 1 solid #E6E6E6;
+  border-top: 1 solid #E6E6E6;
+}
+#goodsNav #navLeftBOX .navPrice input {
+  display: inline-block;
+  width: 54px;
+  height: 24px;
+}
+#goodsNav #navLeftBOX .navPrice span {
+  display: none;
+}
+#goodsNav #navLeftBOX:hover a {
+  text-decoration: none;
+}
+#goodsShow {
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: -20px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+#goodsShow li {
+  display: block;
+  position: relative;
+  float: left;
+  margin: 30px 0;
+  padding: 20px 20px 10px;
+  overflow: hidden;
+  width: 200px;
+  height: 348px;
+}
+#goodsShow li img {
+  width: 200px;
+  height: 200px;
+  margin-top: 0px;
+  text-align: center;
+}
+#goodsShow li .title {
+  padding: 16px 0 0;
+  height: 56px;
+  text-align: left;
+  overflow: hidden;
+  font-size: 12px;
+  font-family: "微软雅黑";
+}
+#goodsShow li .title a {
+  color: #666666;
+}
+#goodsShow li .price {
+  height: 32px;
+  width: 200px;
+  margin: 0;
+  padding: 0 0;
+  overflow: hidden;
+  text-align: left;
+  line-height: 32px;
+  font-size: 18px;
+  font-family: "微软雅黑";
+  color: #CC0000;
+}
+#goodsShow li .volume {
+  margin: 0;
+  height: 32px;
+  width: 200px;
+  padding: 0 0;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #CC0000;
+}
+#goodsShow li .volume span {
+  color: #666666;
+}
+#goodsShow li .volume span:nth-child(1) {
+  margin-left: 0;
+}
+#goodsShow li .volume span:nth-child(2) {
+  margin-right: 0;
+}
+#goodsShow li .volume span:nth-child(2) em {
+  color: #3366CC;
+}
+#goodsShow li .shopInfor {
+  margin: 0;
+  height: 20px;
+  width: 200px;
+  padding: 0 0;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #CC0000;
+}
+#goodsShow li .shopInfor a {
+  color: #666666;
+}
+#goodsShow li:hover {
+  width: 190px;
+  margin: 30px 5px;
+  box-shadow: 1px 1px 5px #666666;
+}
+#page {
+  display: block;
+  width: 420px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin: 35px auto;
+  font-size: 18px;
+  font-family: "微软雅黑";
+  color: #666666;
+}
+#page a {
+  color: #666666;
+}
+#page li {
+  display: block;
+  height: 34px;
+  float: left;
+  border: 1px solid #666666;
+  margin: 0 3px;
+  padding: 0 12px;
+  cursor: pointer;
+  color: #666666;
+}
+#page li:hover {
+  background: #CC0000;
+  color: white;
+}
+#page li:nth-child(5) {
+  border: none;
+  padding: 0;
+}
+#HOT {
+  margin: 15px auto;
+  width: 174;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "微软雅黑";
+  color: #666666;
+}
+#hotImg {
+  width: 1200px;
+  height: 214px;
+  margin: 5px auto;
+  background: white;
+}
+#hotImg a {
+  display: block;
+  float: left;
+  margin: 0 0 0 20px;
+  width: 285px;
+  height: 214px;
+}
+#hotImg a img {
+  width: 285px;
+  height: 214px;
+}
+#hotImg a:nth-child(1) {
+  margin: 0;
+}
+#searchBottomBox {
+  width: 536px;
+  height: 32px;
+  position: relative;
+  margin: 25px auto;
+  border: 2px solid #CC0000;
+}
+#searchBottomBox .searchContent {
+  width: 446px;
+  height: 32px;
+  border: none;
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  font-size: 14px;
+  line-height: 32px;
+  color: #666666;
+  background: white;
+}
+#searchBottomBox .searchBtn {
+  width: 87px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px solid #CC0000;
+  text-align: center;
+  line-height: 28px;
+  font-family: "微软雅黑";
+  font-size: 18px;
+  color: white;
+  background: #CC0000;
+  cursor: pointer;
+}
+/*# sourceMappingURL=list.css.map */

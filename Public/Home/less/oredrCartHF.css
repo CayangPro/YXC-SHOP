@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #CC0000;
+  text-decoration: underline;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+#topBack {
+  width: 100%;
+  height: 29px;
+  margin: 0 auto;
+  background: #F5F5F5;
+  border-bottom: 1px solid #E6E6E6;
+}
+#topBack #topFather {
+  width: 960px;
+  height: 29px;
+  margin: 1px auto;
+  position: relative;
+  line-height: 29px;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  color: #666666;
+}
+#topBack #topFather #topLeft {
+  width: 340px;
+  height: 29px;
+  float: left;
+  position: relative;
+}
+#topBack #topFather #topLeft .topHome {
+  padding: 0 20px 0 0;
+}
+#topBack #topFather #topLeft .topHome a {
+  color: #666666;
+}
+#topBack #topFather #topLeft .topHome a:hover {
+  color: #CC0000;
+}
+#topBack #topFather #topLeft .topWelcomeLogin {
+  padding: 0 20px 0 0;
+}
+#topBack #topFather #topLeft .topWelcomeLogin a {
+  color: #3366CC;
+}
+#topBack #topFather #topLeft .topWelcomeLogin a:hover {
+  color: #CC0000;
+}
+#topBack #topFather #topLeft .topRegister {
+  padding: 0 0 0 0;
+}
+#topBack #topFather #topLeft .topRegister a {
+  color: #3366CC;
+}
+#topBack #topFather #topLeft .topRegister a:hover {
+  color: #CC0000;
+}
+#topBack #topFather #topRight {
+  width: 440px;
+  height: 29px;
+  float: right;
+  position: relative;
+  margin: 0;
+}
+#topBack #topFather #topRight li {
+  float: right;
+  margin: 0 10px;
+  height: 29px;
+  position: relative;
+}
+#topBack #topFather #topRight li a {
+  display: inline-block;
+  color: #666666;
+}
+#topBack #topFather #topRight li #service {
+  display: inline-block;
+  margin-right: -10px;
+  height: 29px;
+  position: relative;
+  padding: 0 10px;
+  border-left: 1px solid #F5F5F5;
+  border-right: 1px solid #F5F5F5;
+}
+#topBack #topFather #topRight li #serviceCall {
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #E6E6E6;
+  border-top: 1px solid white;
+  position: absolute;
+  top: 29px;
+  right: -10px;
+  padding: 3px 5px;
+  text-align: center;
+  display: none;
+  z-index: 10;
+}
+#topBack #topFather #topRight a:hover {
+  color: #CC0000;
+  display: block;
+}
+#topBack #topFather #topRight li:hover #buyerCenter {
+  text-decoration: none;
+  border-left: 1px solid #E6E6E6;
+  border-right: 1px solid #E6E6E6;
+  background: white;
+}
+#topBack #topFather #topRight li:hover #focus {
+  background: white;
+  color: #CC0000;
+  display: block;
+}
+#topBack #topFather #focus a {
+  text-decoration: none;
+}
+#topBack #topFather #focus a:hover #focusShopsNum {
+  color: #CC0000;
+}
+#topBack #topFather #focus a:hover #focusGoodsNum {
+  color: #CC0000;
+}
+#topBack #topFather #topRight li:hover #service {
+  border-left: 1px solid #E6E6E6;
+  border-right: 1px solid #E6E6E6;
+  background: white;
+  display: block;
+}
+#topBack #topFather #topRight li:hover #serviceCall {
+  display: block;
+}
+#footerBox {
+  width: 960px;
+  margin: 0 auto;
+  border-top: 1px solid #E6E6E6;
+}
+#footerBox p {
+  display: block;
+  width: 960;
+  height: 23px;
+  padding: 10px 0;
+  text-align: center;
+  line-height: 23px;
+  font-size: 12px;
+}
+#footerBox p a {
+  color: #3366CC;
+}
+#footerBox #authentication {
+  width: 960px;
+  height: 40px;
+  margin: 0px auto;
+  text-align: center;
+  padding: 10px 10px;
+  padding-bottom: 20px;
+}
+#footerBox #authentication a {
+  cursor: default;
+}
+/*# sourceMappingURL=oredrCartHF.css.map */

@@ -1,0 +1,295 @@
+//颜色
+@color1: #F5F5F5; //顶部背景灰色
+@color2: #E6E6E6; //顶部下边框深灰色
+@color3: #666666; //字体深灰色
+@color4: #3366CC; //蓝色字体
+@color5: #CC0000; //hover效果朱红色
+@color6: #FF335A; //订单数量红色
+@color7: #333; //字体黑色
+@color8: #2D2D2D; //左侧菜单栏背景色
+@color9: #3D3D3D; //左侧菜单栏边框色
+@color10: #ababab;//网络字体颜色
+
+//字体大小
+@Size1: 12px;
+@Size2: 14px;
+@Size3: 16px;
+@Size4: 18px;
+@Size5: 20px;
+@Size9: 25px;
+@Size10: 30x;
+
+*{ margin: 0;padding: 0; }
+
+a{text-decoration: none;}
+a:hover{
+    color: @color5;
+    text-decoration: underline;
+}
+
+
+li{list-style: none;}
+body{background-color: @color1;}
+.shadow{box-shadow: 1px 1px 5px @color3;}
+
+//head区域开始
+#headBox{
+    width: 100%;
+    height: 82px;
+    margin: 0 auto;
+    background: @color5;
+    .headSon{
+        width: 1100px;
+        margin: 0 auto;
+        height: 65px;
+        position: relative;
+        overflow: hidden;
+        .headTitle{
+            display: block;
+            float: left;
+            width: 154px;
+            height: 38px;
+            position: absolute;
+            bottom: 0;
+            margin-left: 0;
+            margin-right: 34px;
+            background: url(../images/logo.png) no-repeat;
+        }
+        .headHome{
+            display: inline-block;
+            float: left;
+            width: 40px;
+            height: 38px;
+            position: absolute;
+            left: 188px;
+            bottom: 0;
+            font-size: @Size3;
+            color: white;
+            line-height: 38px;
+            text-align: center;
+            &:hover{
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+   
+} 
+//head区域结束
+
+//详情区开始
+#wrapper{
+    width: 1100px;
+    margin: 20px auto;
+    padding: 10px 0;
+    overflow: hidden;
+    //左侧导航区开始
+    #navLeftBox{
+        display: block;
+        width: 150px;
+        height: 500px;
+        margin: 0;
+        float: left;
+        background: white;
+        //订单中心
+        li{
+            display: block;
+            float: left;
+            width: 132x;
+            margin: 0;
+            float: right;
+            .opc{
+                width: 132px;
+                height: 30px;
+                margin: 10px 0 0 0;
+                color: @color7;
+                display: block;
+                position: relative;
+                padding-left: 20px;
+                font-size: @Size3;
+                text-align: left;
+                line-height: 30px;
+                i{
+                    display: block;
+                    float: left;
+                    width: 14px;
+                    height: 18px;
+                    margin: 6px 8px;
+                    margin-left: 0;
+                    background: url(../images/allbgs.png) no-repeat 0 -142px;
+                }
+            }
+            .apc{
+                width: 107px;
+                height: 26px;
+                margin: 0 0 0 24px;
+                color: @color3;
+                display: block;
+                position: relative;
+                padding-left: 20px;
+                font-size: @Size2;
+                text-align: left;
+                line-height: 26px;
+                cursor: pointer;
+                &:hover{color: @color5;}
+            }
+        }
+        .personalSet{
+            p{
+              i{
+                   background: url(../images/allbgs.png) no-repeat 0 -89px; 
+                }  
+            }
+        }
+        
+    }
+    
+    //右侧导航区开始
+    #navRightBox{
+        width: 935px;
+        margin: 0;
+        float: right;
+        position: relative;
+        background: white;
+        padding-bottom: 20px;
+        box-shadow: 1px 1px 5px @color3;
+        //标题
+        #nrTitle{
+            display: block;
+            width: 903px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 15px;
+            border-bottom: 2px solid @color2;
+            li{
+                display: block;
+                width: 112px;
+                height: 50px;
+                margin: 0;
+                margin-bottom: -2px;
+                text-align: center;
+                line-height: 50px;
+                font-size: @Size4;
+                color: @color5;
+                border-bottom: 2px solid @color5;
+            }
+        }
+        //图标区
+        #nrImgs{
+            display: block;
+            width: 903px;
+            height: 84px;
+            margin: 42px 16px 36px 16px; 
+            li{
+                display: block;
+                float: left;
+                font-size: 12px;
+                line-height: 18px; 
+                margin: 0 50px;
+                a{
+                    display: block;
+                    width: 77px;
+                    height: 84px;
+                    color: @color7;
+                    margin: 0;
+                    text-align: center;
+                    position: relative;
+                }
+            }
+            .daiFuK,.daiFaH,.daiSaH,.daiPingJ{
+                a{
+                    i{
+                        display: block;
+                        width: 56px;
+                        height: 53px;
+                        position: relative;
+                        margin: 0;
+                        margin-left: 10px;
+                        background: url(../images/allbgs.png) no-repeat 0 -543px;
+                    }
+                    span{
+                        display: block;
+                        width: 84px;
+                        height: 17px;
+                        position: absolute;
+                        bottom: 5px;
+                        left: -12px;
+                        font-size: @Size1;
+                        line-height: 17px;
+                        text-align: center;
+                        e{
+                            display: block;
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 50%;
+                            position: absolute;
+                            bottom: 1px;
+                            right: 0;
+                            font-size: @Size1;
+                            line-height: 16px;
+                            font-size: @Size1;
+                            text-align: center;
+                            color: white;
+                            background-color: @color5;
+                        }
+                    }
+                    
+                }
+            }
+            .daiFuK a:hover{
+                span{text-decoration: underline; color: @color5;}
+                i{background: url(../images/allbgs.png) no-repeat 0 -656px;}
+            }
+            .daiFaH{
+                a{                    
+                    i{
+                        width: 56px;
+                        height: 45px;
+                        top: 8px;
+                        background: url(../images/allbgs.png) no-repeat 3px -287px;
+                    }
+                    &:hover{
+                        span{text-decoration: underline; color: @color5;}
+                        i{background: url(../images/allbgs.png) no-repeat 3px -336px;}
+                    }
+                }
+            }
+            .daiSaH{
+                a{                    
+                    i{
+                        width: 59px;
+                        height: 45px;
+                        top: 8px;
+                        background: url(../images/allbgs.png) no-repeat 0 -241px;
+                    }
+                    &:hover{
+                        span{text-decoration: underline; color: @color5;}
+                        i{background: url(../images/allbgs.png) no-repeat 0 -199px;}
+                    }
+                }
+            }
+            
+            .daiPingJ{
+                a{                    
+                    i{
+                        width: 52px;
+                        height: 49px;
+                        top: 8px;
+                        background: url(../images/allbgs.png) no-repeat 7px -385px;
+                    }
+                    &:hover{
+                        span{text-decoration: underline; color: @color5;}
+                        i{background: url(../images/allbgs.png) no-repeat 7px -437px;}
+                    }
+                }
+            }
+        }
+       
+        
+    }
+}
+
+//详情区结束
+
+
+
